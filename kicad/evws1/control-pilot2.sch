@@ -1,0 +1,438 @@
+EESchema Schematic File Version 4
+LIBS:evws1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E11008B
+P 7200 3550
+AR Path="/5E11008B" Ref="#PWR?"  Part="1" 
+AR Path="/5E13857A/5E11008B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5F6ED0C4/5E11008B" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 7200 3400 50  0001 C CNN
+F 1 "+3V3" H 7215 3723 50  0000 C CNN
+F 2 "" H 7200 3550 50  0001 C CNN
+F 3 "" H 7200 3550 50  0001 C CNN
+	1    7200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R55
+U 1 1 5E15A44D
+P 8600 3050
+F 0 "R55" H 8475 3100 50  0000 C CNN
+F 1 "880R" H 8450 3000 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8530 3050 50  0001 C CNN
+F 3 "" H 8600 3050 50  0001 C CNN
+	1    8600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D10
+U 1 1 5E15A595
+P 8600 3450
+F 0 "D10" V 8638 3333 50  0000 R CNN
+F 1 "LED" V 8547 3333 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 8600 3450 50  0001 C CNN
+F 3 "~" H 8600 3450 50  0001 C CNN
+F 4 "green" V 8450 3225 50  0000 C CNN "color"
+	1    8600 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E15A818
+P 8600 2800
+AR Path="/5E15A818" Ref="#PWR?"  Part="1" 
+AR Path="/5E13857A/5E15A818" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5F6ED0C4/5E15A818" Ref="#PWR0191"  Part="1" 
+F 0 "#PWR0191" H 8600 2650 50  0001 C CNN
+F 1 "+3V3" H 8615 2973 50  0000 C CNN
+F 2 "" H 8600 2800 50  0001 C CNN
+F 3 "" H 8600 2800 50  0001 C CNN
+	1    8600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3200 8600 3300
+Wire Wire Line
+	8600 2900 8600 2800
+$Comp
+L Device:R R61
+U 1 1 5E16B5C8
+P 9200 3050
+F 0 "R61" H 9075 3100 50  0000 C CNN
+F 1 "220R" H 9050 3000 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 9130 3050 50  0001 C CNN
+F 3 "" H 9200 3050 50  0001 C CNN
+	1    9200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5E16B5CF
+P 9200 3450
+F 0 "D11" V 9238 3333 50  0000 R CNN
+F 1 "LED" V 9147 3333 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 9200 3450 50  0001 C CNN
+F 3 "~" H 9200 3450 50  0001 C CNN
+F 4 "blue" V 9050 3250 50  0000 C CNN "color"
+	1    9200 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E16B5D6
+P 9200 2800
+AR Path="/5E16B5D6" Ref="#PWR?"  Part="1" 
+AR Path="/5E13857A/5E16B5D6" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5F6ED0C4/5E16B5D6" Ref="#PWR0192"  Part="1" 
+F 0 "#PWR0192" H 9200 2650 50  0001 C CNN
+F 1 "+3V3" H 9215 2973 50  0000 C CNN
+F 2 "" H 9200 2800 50  0001 C CNN
+F 3 "" H 9200 2800 50  0001 C CNN
+	1    9200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3200 9200 3300
+Wire Wire Line
+	9200 2900 9200 2800
+$Comp
+L Device:R R63
+U 1 1 5E16FA1F
+P 9800 3050
+F 0 "R63" H 9675 3100 50  0000 C CNN
+F 1 "1K2" H 9675 3000 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 9730 3050 50  0001 C CNN
+F 3 "" H 9800 3050 50  0001 C CNN
+	1    9800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 5E16FA26
+P 9800 3450
+F 0 "D12" V 9838 3333 50  0000 R CNN
+F 1 "LED" V 9747 3333 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 9800 3450 50  0001 C CNN
+F 3 "~" H 9800 3450 50  0001 C CNN
+F 4 "red" V 9650 3275 50  0000 C CNN "color"
+	1    9800 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E16FA2D
+P 9800 2800
+AR Path="/5E16FA2D" Ref="#PWR?"  Part="1" 
+AR Path="/5E13857A/5E16FA2D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5F6ED0C4/5E16FA2D" Ref="#PWR0193"  Part="1" 
+F 0 "#PWR0193" H 9800 2650 50  0001 C CNN
+F 1 "+3V3" H 9815 2973 50  0000 C CNN
+F 2 "" H 9800 2800 50  0001 C CNN
+F 3 "" H 9800 2800 50  0001 C CNN
+	1    9800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3200 9800 3300
+Wire Wire Line
+	9800 2900 9800 2800
+Wire Wire Line
+	8600 3900 8600 3600
+Text HLabel 10250 3900 2    50   Output ~ 0
+VCPLT11V5
+Text HLabel 10250 4000 2    50   Output ~ 0
+VCPLT7V5
+Text HLabel 10250 4100 2    50   Output ~ 0
+VCPLT3V5
+Wire Wire Line
+	8600 3900 10250 3900
+Connection ~ 8600 3900
+Wire Wire Line
+	7000 3800 7800 3800
+Wire Wire Line
+	9800 4100 9800 5300
+Wire Wire Line
+	10250 4100 9800 4100
+Wire Wire Line
+	9200 4000 9200 4600
+Wire Wire Line
+	9200 4000 10250 4000
+Wire Wire Line
+	9800 5300 9700 5300
+Connection ~ 9800 4100
+Wire Wire Line
+	9800 3600 9800 4100
+Wire Wire Line
+	9200 4600 9100 4600
+Connection ~ 9200 4000
+Wire Wire Line
+	9200 3600 9200 4000
+Wire Wire Line
+	8900 5600 8900 5400
+Wire Wire Line
+	9250 5600 8900 5600
+Wire Wire Line
+	9700 5600 9550 5600
+Wire Wire Line
+	9700 5300 9700 5600
+Connection ~ 9700 5300
+Wire Wire Line
+	9600 5300 9700 5300
+Wire Wire Line
+	8300 4900 8300 4700
+Wire Wire Line
+	8600 4900 8300 4900
+Wire Wire Line
+	9100 4900 8900 4900
+Wire Wire Line
+	9100 4600 9100 4900
+Connection ~ 9100 4600
+Wire Wire Line
+	9000 4600 9100 4600
+Wire Wire Line
+	7700 4200 7700 5700
+Wire Wire Line
+	8000 4200 7700 4200
+Wire Wire Line
+	8500 4200 8300 4200
+Wire Wire Line
+	8500 3900 8600 3900
+Wire Wire Line
+	8400 3900 8500 3900
+Connection ~ 8500 3900
+Wire Wire Line
+	8500 3900 8500 4200
+Wire Wire Line
+	8900 6000 8900 6100
+Wire Wire Line
+	8900 5400 9000 5400
+Connection ~ 8900 5600
+Wire Wire Line
+	8900 5700 8900 5600
+Wire Wire Line
+	8300 6000 8300 6100
+Wire Wire Line
+	8300 4700 8400 4700
+Connection ~ 8300 4900
+Wire Wire Line
+	8300 5700 8300 4900
+Wire Wire Line
+	7700 6000 7700 6100
+Wire Wire Line
+	7700 4000 7800 4000
+Connection ~ 7700 4200
+Wire Wire Line
+	7700 4000 7700 4200
+Connection ~ 8900 5400
+Wire Wire Line
+	8800 5400 8900 5400
+Connection ~ 8300 4700
+Wire Wire Line
+	8200 4700 8300 4700
+Connection ~ 7700 4000
+Wire Wire Line
+	7600 4000 7700 4000
+Wire Wire Line
+	7200 5400 8500 5400
+Wire Wire Line
+	7200 4700 7200 5400
+Wire Wire Line
+	7200 4700 7900 4700
+Connection ~ 7200 4700
+Wire Wire Line
+	7200 4000 7200 4700
+Wire Wire Line
+	7200 4000 7300 4000
+Connection ~ 7200 4000
+Wire Wire Line
+	7200 3550 7200 4000
+$Comp
+L power:GND #PWR0197
+U 1 1 5E11A6CC
+P 8900 6100
+F 0 "#PWR0197" H 8900 5850 50  0001 C CNN
+F 1 "GND" H 8900 5950 50  0000 C CNN
+F 2 "" H 8900 6100 50  0001 C CNN
+F 3 "" H 8900 6100 50  0001 C CNN
+	1    8900 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0198
+U 1 1 5E11A671
+P 8300 6100
+F 0 "#PWR0198" H 8300 5850 50  0001 C CNN
+F 1 "GND" H 8300 5950 50  0000 C CNN
+F 2 "" H 8300 6100 50  0001 C CNN
+F 3 "" H 8300 6100 50  0001 C CNN
+	1    8300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R59
+U 1 1 5E10FF0C
+P 8900 5850
+F 0 "R59" H 8750 5900 50  0000 C CNN
+F 1 "2K2" H 8750 5800 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8830 5850 50  0001 C CNN
+F 3 "" H 8900 5850 50  0001 C CNN
+	1    8900 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R54
+U 1 1 5E10FE52
+P 8300 5850
+F 0 "R54" H 8150 5900 50  0000 C CNN
+F 1 "3K9" H 8150 5800 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8230 5850 50  0001 C CNN
+F 3 "" H 8300 5850 50  0001 C CNN
+	1    8300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R51
+U 1 1 5E10FD6C
+P 7700 5850
+F 0 "R51" H 7550 5900 50  0000 C CNN
+F 1 "8K2" H 7550 5800 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 7630 5850 50  0001 C CNN
+F 3 "" H 7700 5850 50  0001 C CNN
+	1    7700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R62
+U 1 1 5E10A78A
+P 9400 5600
+F 0 "R62" V 9480 5600 50  0000 C CNN
+F 1 "82K" V 9300 5600 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 9330 5600 50  0001 C CNN
+F 3 "" H 9400 5600 50  0001 C CNN
+	1    9400 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R57
+U 1 1 5E10A6E2
+P 8750 4900
+F 0 "R57" V 8830 4900 50  0000 C CNN
+F 1 "100K" V 8650 4900 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8680 4900 50  0001 C CNN
+F 3 "" H 8750 4900 50  0001 C CNN
+	1    8750 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R53
+U 1 1 5E10A656
+P 8150 4200
+F 0 "R53" V 8230 4200 50  0000 C CNN
+F 1 "330K" V 8050 4200 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8080 4200 50  0001 C CNN
+F 3 "" H 8150 4200 50  0001 C CNN
+	1    8150 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R49
+U 1 1 5E1050C0
+P 7450 4000
+F 0 "R49" V 7530 4000 50  0000 C CNN
+F 1 "5K6" V 7350 4000 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 7380 4000 50  0001 C CNN
+F 3 "" H 7450 4000 50  0001 C CNN
+	1    7450 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R56
+U 1 1 5E105011
+P 8650 5400
+F 0 "R56" V 8730 5400 50  0000 C CNN
+F 1 "10K" V 8550 5400 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 8580 5400 50  0001 C CNN
+F 3 "" H 8650 5400 50  0001 C CNN
+	1    8650 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R52
+U 1 1 5E104ECB
+P 8050 4700
+F 0 "R52" V 8130 4700 50  0000 C CNN
+F 1 "5K6" V 7950 4700 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 7980 4700 50  0001 C CNN
+F 3 "" H 8050 4700 50  0001 C CNN
+	1    8050 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0199
+U 1 1 5E0E35CC
+P 7700 6100
+F 0 "#PWR0199" H 7700 5850 50  0001 C CNN
+F 1 "GND" H 7700 5950 50  0000 C CNN
+F 2 "" H 7700 6100 50  0001 C CNN
+F 3 "" H 7700 6100 50  0001 C CNN
+	1    7700 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5200 9000 5200
+Wire Wire Line
+	7000 4500 7000 5200
+Wire Wire Line
+	7000 3800 7000 4500
+Connection ~ 7000 4500
+Wire Wire Line
+	7000 4500 8400 4500
+$Comp
+L _project:LM224 U11
+U 4 1 5E2B2AFE
+P 9300 5300
+F 0 "U11" H 9300 5100 50  0000 C CNN
+F 1 "LM224" H 9300 5576 50  0001 C CNN
+F 2 "Project:soic-14_hand-soldering" H 9250 5400 50  0001 C CNN
+F 3 "" H 9350 5500 50  0001 C CNN
+	4    9300 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L _project:LM224 U11
+U 3 1 5E2B2A1B
+P 8700 4600
+F 0 "U11" H 8700 4400 50  0000 C CNN
+F 1 "LM224" H 8700 4876 50  0001 C CNN
+F 2 "Project:soic-14_hand-soldering" H 8650 4700 50  0001 C CNN
+F 3 "" H 8750 4800 50  0001 C CNN
+	3    8700 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L _project:LM224 U11
+U 2 1 5E2B2972
+P 8100 3900
+F 0 "U11" H 8100 3700 50  0000 C CNN
+F 1 "LM224" H 8100 4176 50  0001 C CNN
+F 2 "Project:soic-14_hand-soldering" H 8050 4000 50  0001 C CNN
+F 3 "" H 8150 4100 50  0001 C CNN
+	2    8100 3900
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC
