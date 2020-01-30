@@ -15,7 +15,7 @@ D I2C Serial EEPROM 512K (64K x 8)
 $ENDCMP
 #
 $CMP ACS712-30
-D Current Sensor ACS712
+D Current Sensor ACS712, VCC 5V, 30A
 $ENDCMP
 #
 $CMP AO3400
