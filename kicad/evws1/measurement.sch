@@ -484,7 +484,6 @@ Wire Wire Line
 	2050 1100 2300 1100
 Text HLabel 2050 925  0    50   Input ~ 0
 VREF+2V5
-NoConn ~ 2050 925 
 $Comp
 L power:GND #PWR?
 U 1 1 5EA0C7A0

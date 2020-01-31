@@ -302,34 +302,32 @@ Wire Wire Line
 $Comp
 L Device:C_Small C6
 U 1 1 5E1B0981
-P 3800 1550
-F 0 "C6" V 3571 1550 50  0000 C CNN
-F 1 "100n" V 3662 1550 50  0000 C CNN
-F 2 "Project:c-1206-hand-soldering" H 3800 1550 50  0001 C CNN
-F 3 "~" H 3800 1550 50  0001 C CNN
-	1    3800 1550
+P 3850 1550
+F 0 "C6" V 3621 1550 50  0000 C CNN
+F 1 "100n" V 3712 1550 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 3850 1550 50  0001 C CNN
+F 3 "~" H 3850 1550 50  0001 C CNN
+	1    3850 1550
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E1B0A92
-P 3950 1600
+P 4000 1600
 AR Path="/5E1B0A92" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5E1B0A92" Ref="#PWR0137"  Part="1" 
-F 0 "#PWR0137" H 3950 1350 50  0001 C CNN
-F 1 "GND" H 3955 1427 50  0000 C CNN
-F 2 "" H 3950 1600 50  0001 C CNN
-F 3 "" H 3950 1600 50  0001 C CNN
-	1    3950 1600
+F 0 "#PWR0137" H 4000 1350 50  0001 C CNN
+F 1 "GND" H 4005 1427 50  0000 C CNN
+F 2 "" H 4000 1600 50  0001 C CNN
+F 3 "" H 4000 1600 50  0001 C CNN
+	1    4000 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 1550 3600 1550
 Connection ~ 3600 1550
 Wire Wire Line
-	3900 1550 3950 1550
+	3950 1550 4000 1550
 Wire Wire Line
-	3950 1550 3950 1600
+	4000 1550 4000 1600
 Wire Wire Line
 	2300 3450 2000 3450
 Connection ~ 2000 3450
@@ -655,10 +653,6 @@ Wire Wire Line
 	1350 2475 975  2475
 Wire Wire Line
 	1350 2825 975  2825
-Text Label 1000 2475 0    50   ~ 0
-~EV1
-Text Label 1000 2825 0    50   ~ 0
-~EV2
 Connection ~ 1850 2100
 Wire Wire Line
 	1850 2825 1800 2825
@@ -817,8 +811,6 @@ Wire Wire Line
 	1050 6000 1050 6050
 Wire Wire Line
 	1050 6050 1150 6050
-Wire Wire Line
-	1150 6250 1050 6250
 $Comp
 L power:GND #PWR?
 U 1 1 5E43B484
@@ -845,8 +837,6 @@ F 3 "~" H 1050 6600 50  0001 C CNN
 	1    1050 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 6450 1050 6250
 Wire Wire Line
 	1050 6750 1050 6850
 Wire Wire Line
@@ -1171,26 +1161,19 @@ F 3 "" H 5400 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 1250 5400 1200
-Wire Wire Line
-	5400 900  5250 900 
-Wire Wire Line
-	5250 900  5250 1200
 $Comp
 L power:+BATT #PWR?
 U 1 1 5E39A133
-P 5175 900
+P 5250 800
 AR Path="/5E39A133" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5E39A133" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 5175 750 50  0001 C CNN
-F 1 "+BATT" H 5150 1050 50  0000 C CNN
-F 2 "" H 5175 900 50  0001 C CNN
-F 3 "" H 5175 900 50  0001 C CNN
-	1    5175 900 
+F 0 "#PWR0106" H 5250 650 50  0001 C CNN
+F 1 "+BATT" H 5225 950 50  0000 C CNN
+F 2 "" H 5250 800 50  0001 C CNN
+F 3 "" H 5250 800 50  0001 C CNN
+	1    5250 800 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 900  5175 900 
-Connection ~ 5250 900 
 NoConn ~ 5250 1300
 Wire Wire Line
 	4350 1200 4300 1200
@@ -1312,12 +1295,12 @@ Wire Wire Line
 $Comp
 L Device:C_Small C20
 U 1 1 5E59279C
-P 7400 925
-F 0 "C20" H 7500 850 50  0000 C CNN
-F 1 "100n" H 7525 1000 50  0000 C CNN
-F 2 "Project:c-1206-hand-soldering" H 7400 925 50  0001 C CNN
-F 3 "~" H 7400 925 50  0001 C CNN
-	1    7400 925 
+P 7400 950
+F 0 "C20" H 7500 875 50  0000 C CNN
+F 1 "100n" H 7525 1025 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 7400 950 50  0001 C CNN
+F 3 "~" H 7400 950 50  0001 C CNN
+	1    7400 950 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1331,12 +1314,6 @@ Wire Wire Line
 	7950 2350 7950 2050
 Connection ~ 6550 2350
 NoConn ~ 7450 1350
-Wire Wire Line
-	7400 825  7400 800 
-Wire Wire Line
-	7400 800  7450 800 
-Wire Wire Line
-	7400 1025 7400 1050
 $Comp
 L power:GND #PWR?
 U 1 1 5E5FD7C2
@@ -1397,25 +1374,8 @@ F 3 "" H 6900 1625 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7450 1250 7400 1250
-Connection ~ 7400 1250
 Wire Wire Line
 	7400 1250 7400 1700
-$Comp
-L power:+5V #PWR?
-U 1 1 5E62D263
-P 7400 750
-AR Path="/5E62D263" Ref="#PWR?"  Part="1" 
-AR Path="/5E0A3961/5E62D263" Ref="#PWR0158"  Part="1" 
-F 0 "#PWR0158" H 7400 600 50  0001 C CNN
-F 1 "+5V" H 7400 900 50  0000 C CNN
-F 2 "" H 7400 750 50  0001 C CNN
-F 3 "" H 7400 750 50  0001 C CNN
-	1    7400 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 800  7400 750 
-Connection ~ 7400 800 
 $Comp
 L power:+5V #PWR?
 U 1 1 5E65E06A
@@ -1439,11 +1399,6 @@ Wire Wire Line
 	6900 1200 6900 1275
 Wire Wire Line
 	6900 1575 6900 1625
-Wire Wire Line
-	7450 1050 7400 1050
-Connection ~ 7400 1050
-Wire Wire Line
-	7400 1050 7400 1250
 $Comp
 L Device:C_Small C21
 U 1 1 5E758831
@@ -1514,12 +1469,12 @@ Wire Wire Line
 $Comp
 L Device:C_Small C22
 U 1 1 5E95EBC4
-P 9300 975
-F 0 "C22" H 9400 900 50  0000 C CNN
-F 1 "100n" H 9425 1050 50  0000 C CNN
-F 2 "Project:c-1206-hand-soldering" H 9300 975 50  0001 C CNN
-F 3 "~" H 9300 975 50  0001 C CNN
-	1    9300 975 
+P 9300 1000
+F 0 "C22" H 9400 925 50  0000 C CNN
+F 1 "100n" H 9425 1075 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 9300 1000 50  0001 C CNN
+F 3 "~" H 9300 1000 50  0001 C CNN
+	1    9300 1000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1566,22 +1521,7 @@ $EndComp
 Wire Wire Line
 	9350 1700 9100 1700
 Wire Wire Line
-	9300 1075 9300 1100
-Wire Wire Line
-	9350 1100 9300 1100
-Connection ~ 9300 1100
-Wire Wire Line
-	9300 1100 9300 1600
-Wire Wire Line
-	9350 850  9300 850 
-Wire Wire Line
-	9300 850  9300 875 
-Wire Wire Line
-	9300 850  9300 750 
-Connection ~ 9300 850 
-Wire Wire Line
 	9350 1600 9300 1600
-Connection ~ 9300 1600
 Wire Wire Line
 	9300 1600 9300 1800
 Wire Wire Line
@@ -1602,8 +1542,6 @@ F 3 "" H 9100 1350 50  0001 C CNN
 	1    9100 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 1400 9100 1350
 Text HLabel 4650 2850 2    50   Output ~ 0
 ~K1-ON
 Text HLabel 4650 2950 2    50   Output ~ 0
@@ -1632,37 +1570,27 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 5EB7F783
-P 10650 1850
+P 10650 1800
 AR Path="/5EB7F783" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5EB7F783" Ref="#PWR0164"  Part="1" 
-F 0 "#PWR0164" H 10650 1700 50  0001 C CNN
-F 1 "+5V" H 10675 2000 50  0000 C CNN
-F 2 "" H 10650 1850 50  0001 C CNN
-F 3 "" H 10650 1850 50  0001 C CNN
-	1    10650 1850
+F 0 "#PWR0164" H 10650 1650 50  0001 C CNN
+F 1 "+5V" H 10675 1950 50  0000 C CNN
+F 2 "" H 10650 1800 50  0001 C CNN
+F 3 "" H 10650 1800 50  0001 C CNN
+	1    10650 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10650 1900 10650 1850
 Wire Wire Line
 	10550 1750 10550 2250
 Connection ~ 10550 2250
 Wire Wire Line
 	10550 2250 10550 2450
-Text HLabel 10500 1050 2    50   Input ~ 0
-K1-IS-ON
 Text HLabel 10500 950  2    50   Input ~ 0
+K1-IS-ON
+Text HLabel 10500 850  2    50   Input ~ 0
 K2-IS-ON
 Wire Wire Line
 	10350 950  10500 950 
-Wire Wire Line
-	10500 1050 10350 1050
-Wire Wire Line
-	10350 1150 10500 1150
-Wire Wire Line
-	10350 1250 10500 1250
-Wire Wire Line
-	10350 1350 10500 1350
 Wire Wire Line
 	10350 1550 11025 1550
 Wire Wire Line
@@ -1800,12 +1728,12 @@ Wire Wire Line
 	10775 4075 10775 4000
 NoConn ~ 7100 3350
 NoConn ~ 7100 3450
-NoConn ~ 8750 3550
-NoConn ~ 8750 3650
-NoConn ~ 8750 3750
-NoConn ~ 8750 3850
-NoConn ~ 8750 3950
-NoConn ~ 8750 4050
+NoConn ~ 9100 3550
+NoConn ~ 9100 3650
+NoConn ~ 9100 3750
+NoConn ~ 9100 3850
+NoConn ~ 9100 3950
+NoConn ~ 9100 4050
 NoConn ~ 9100 4950
 NoConn ~ 9100 5050
 NoConn ~ 9100 5150
@@ -1977,8 +1905,8 @@ AD-VC2
 Text HLabel 5275 4450 0    50   Input ~ 0
 PE
 NoConn ~ 8650 5850
-NoConn ~ 8750 4150
-NoConn ~ 8750 4250
+NoConn ~ 9100 4150
+NoConn ~ 9100 4250
 $Comp
 L power:+12V #PWR?
 U 1 1 5E707F82
@@ -2320,15 +2248,6 @@ Wire Wire Line
 	9150 2950 9150 2850
 Connection ~ 9150 2850
 Wire Wire Line
-	9100 3050 9250 3050
-Wire Wire Line
-	9250 3050 9250 2900
-Wire Wire Line
-	9100 3150 9250 3150
-Wire Wire Line
-	9250 3150 9250 3050
-Connection ~ 9250 3050
-Wire Wire Line
 	9100 3250 9150 3250
 Wire Wire Line
 	9100 3350 9550 3350
@@ -2430,4 +2349,149 @@ F 3 "" H 2200 4550 50  0001 C CNN
 	1    2200 4550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9250 2900 9250 3050
+Wire Wire Line
+	9250 3150 9100 3150
+Wire Wire Line
+	9250 3050 9100 3050
+Connection ~ 9250 3050
+Wire Wire Line
+	9250 3050 9250 3150
+NoConn ~ 10350 1250
+Wire Wire Line
+	1050 6450 1050 6400
+Wire Wire Line
+	1050 6250 1150 6250
+$Comp
+L power:+5V #PWR?
+U 1 1 5E62D263
+P 7400 750
+AR Path="/5E62D263" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5E62D263" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 7400 600 50  0001 C CNN
+F 1 "+5V" H 7400 900 50  0000 C CNN
+F 2 "" H 7400 750 50  0001 C CNN
+F 3 "" H 7400 750 50  0001 C CNN
+	1    7400 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 800  7400 800 
+Wire Wire Line
+	7400 800  7400 750 
+Wire Wire Line
+	7400 800  7400 850 
+Connection ~ 7400 800 
+Wire Wire Line
+	7400 1050 7400 1100
+Wire Wire Line
+	7400 1100 7450 1100
+Wire Wire Line
+	7400 1250 7400 1100
+Connection ~ 7400 1250
+Connection ~ 7400 1100
+Wire Wire Line
+	9350 850  9300 850 
+Wire Wire Line
+	9300 850  9300 900 
+Wire Wire Line
+	9300 850  9300 750 
+Connection ~ 9300 850 
+Wire Wire Line
+	9300 1600 9300 1150
+Connection ~ 9300 1600
+Wire Wire Line
+	9350 1150 9300 1150
+Connection ~ 9300 1150
+Wire Wire Line
+	9300 1150 9300 1100
+Wire Wire Line
+	9100 1400 9100 1350
+Wire Wire Line
+	10650 1900 10650 1800
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E6B24A3
+P 5600 800
+AR Path="/5E6B24A3" Ref="#FLG?"  Part="1" 
+AR Path="/5E0A3961/5E6B24A3" Ref="#FLG0105"  Part="1" 
+F 0 "#FLG0105" H 5600 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 950 50  0000 C CNN
+F 2 "" H 5600 800 50  0001 C CNN
+F 3 "~" H 5600 800 50  0001 C CNN
+	1    5600 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1200 5250 850 
+Wire Wire Line
+	5250 850  5400 850 
+Wire Wire Line
+	5400 850  5400 900 
+Connection ~ 5250 850 
+Wire Wire Line
+	5250 850  5250 800 
+Wire Wire Line
+	5400 850  5600 850 
+Wire Wire Line
+	5600 850  5600 800 
+Connection ~ 5400 850 
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E728967
+P 750 6400
+AR Path="/5E728967" Ref="#FLG?"  Part="1" 
+AR Path="/5E0A3961/5E728967" Ref="#FLG0106"  Part="1" 
+F 0 "#FLG0106" H 750 6475 50  0001 C CNN
+F 1 "PWR_FLAG" H 750 6550 50  0000 C CNN
+F 2 "" H 750 6400 50  0001 C CNN
+F 3 "~" H 750 6400 50  0001 C CNN
+	1    750  6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  6400 1050 6400
+Connection ~ 1050 6400
+Wire Wire Line
+	1050 6400 1050 6250
+Text HLabel 975  2475 0    50   Input ~ 0
+EV1X
+Text HLabel 975  2825 0    50   Input ~ 0
+EV2X
+Text Label 1075 2475 0    50   ~ 0
+EV1X
+Text Label 1075 2825 0    50   ~ 0
+EV2X
+Wire Wire Line
+	10350 1050 10675 1050
+NoConn ~ 10350 1350
+Wire Wire Line
+	10500 850  10350 850 
+Text Label 10425 1050 0    50   ~ 0
+EV1X
+Wire Wire Line
+	10350 1150 10675 1150
+Text Label 10425 1150 0    50   ~ 0
+EV2X
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5EAC6A3D
+P 3650 1300
+AR Path="/5EAC6A3D" Ref="#FLG?"  Part="1" 
+AR Path="/5E0A3961/5EAC6A3D" Ref="#FLG0107"  Part="1" 
+F 0 "#FLG0107" H 3650 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 3650 1474 50  0000 C CNN
+F 2 "" H 3650 1300 50  0001 C CNN
+F 3 "~" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1550 3650 1550
+Wire Wire Line
+	3650 1300 3650 1550
+Connection ~ 3650 1550
+Wire Wire Line
+	3650 1550 3750 1550
 $EndSCHEMATC

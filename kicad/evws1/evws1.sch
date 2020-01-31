@@ -303,7 +303,7 @@ F 3 "~" H 3000 3450 50  0001 C CNN
 	1    3000 3450
 	1    0    0    -1  
 $EndComp
-Text Label 1600 3250 0    50   ~ 0
+Text Label 1550 3250 0    50   ~ 0
 CP2
 $Comp
 L _project:HLK-PM01 M1
@@ -357,7 +357,7 @@ $EndComp
 Text Label 3000 1250 0    50   ~ 0
 PE
 Wire Wire Line
-	1900 1250 3150 1250
+	1900 1250 2400 1250
 Wire Wire Line
 	3150 1250 3150 1350
 Wire Wire Line
@@ -675,8 +675,6 @@ Wire Wire Line
 	4300 4150 4750 4150
 Wire Wire Line
 	4750 4150 4750 4250
-Wire Wire Line
-	4300 3750 4350 3750
 $Comp
 L power:+5V #PWR0116
 U 1 1 5E2AB7B0
@@ -692,8 +690,6 @@ Wire Wire Line
 	7150 3750 7100 3750
 Wire Wire Line
 	7100 3750 7100 3650
-Wire Wire Line
-	4350 3550 4350 3750
 $Comp
 L power:GND #PWR0118
 U 1 1 5E2BB83C
@@ -720,9 +716,6 @@ F 3 "~" H 4550 3750 50  0001 C CNN
 	1    4550 3750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4350 3750 4450 3750
-Connection ~ 4350 3750
 Wire Wire Line
 	4650 3750 4750 3750
 $Comp
@@ -937,9 +930,9 @@ Text Label 9275 2800 0    50   ~ 0
 MODBUS-B
 Text Label 8925 3400 0    50   ~ 0
 ~EV1
-Text Label 1600 3050 0    50   ~ 0
+Text Label 1550 3050 0    50   ~ 0
 ~EV2ON
-Text Label 9575 3500 0    50   ~ 0
+Text Label 9600 3500 0    50   ~ 0
 GND
 Wire Wire Line
 	6150 6450 6650 6450
@@ -952,8 +945,8 @@ MODBUS-B
 Text Label 4900 5250 0    50   ~ 0
 CP2
 Wire Wire Line
-	9725 3600 9475 3600
-Text Label 9575 3600 0    50   ~ 0
+	9750 3600 9475 3600
+Text Label 9625 3600 0    50   ~ 0
 CP1
 Wire Wire Line
 	6150 5250 6450 5250
@@ -1181,16 +1174,16 @@ F 3 "~" H 9925 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 3250 1800 3250
+	1500 3250 1800 3250
 $Comp
 L Connector:Screw_Terminal_01x04 J10
 U 1 1 5E10487A
-P 1350 3050
-F 0 "J10" H 1350 3250 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 1270 3276 50  0001 C CNN
-F 2 "Project:Terminalblock-5mm-4P" H 1350 3050 50  0001 C CNN
-F 3 "~" H 1350 3050 50  0001 C CNN
-	1    1350 3050
+P 1300 3050
+F 0 "J10" H 1300 3250 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1220 3276 50  0001 C CNN
+F 2 "Project:Terminalblock-5mm-4P" H 1300 3050 50  0001 C CNN
+F 3 "~" H 1300 3050 50  0001 C CNN
+	1    1300 3050
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1218,12 +1211,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J5
 U 1 1 5E12902A
-P 9925 3400
-F 0 "J5" H 10004 3346 50  0000 L CNN
-F 1 "Screw_Terminal_01x04" H 9845 3626 50  0001 C CNN
-F 2 "Project:Terminalblock-5mm-4P" H 9925 3400 50  0001 C CNN
-F 3 "~" H 9925 3400 50  0001 C CNN
-	1    9925 3400
+P 9950 3400
+F 0 "J5" H 10029 3346 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 9870 3626 50  0001 C CNN
+F 2 "Project:Terminalblock-5mm-4P" H 9950 3400 50  0001 C CNN
+F 3 "~" H 9950 3400 50  0001 C CNN
+	1    9950 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1234,16 +1227,16 @@ Wire Wire Line
 Text Label 9550 2900 0    50   ~ 0
 GND
 Wire Wire Line
-	1550 3050 1875 3050
+	1500 3050 1875 3050
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5E186730
-P 1650 2850
-F 0 "TP1" H 1600 3050 50  0000 L CNN
-F 1 "TestPoint" H 1708 2879 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 1850 2850 50  0001 C CNN
-F 3 "~" H 1850 2850 50  0001 C CNN
-	1    1650 2850
+P 1800 2850
+F 0 "TP1" H 1750 3050 50  0000 L CNN
+F 1 "TestPoint" H 1858 2879 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 2000 2850 50  0001 C CNN
+F 3 "~" H 2000 2850 50  0001 C CNN
+	1    1800 2850
 	1    0    0    -1  
 $EndComp
 NoConn ~ 10075 1025
@@ -1252,9 +1245,7 @@ NoConn ~ 10475 1025
 NoConn ~ 10675 1025
 NoConn ~ 10875 1025
 Wire Wire Line
-	1650 2850 1650 2950
-Wire Wire Line
-	1650 2950 1550 2950
+	1800 2850 1800 2950
 $Comp
 L Connector:Screw_Terminal_01x02 J7
 U 1 1 5E1318E9
@@ -1291,7 +1282,7 @@ F 3 "" H 5800 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 1050 5250 1050
+	4850 1050 5050 1050
 Connection ~ 4850 1050
 $Comp
 L power:GND #PWR0173
@@ -1419,35 +1410,37 @@ F5 "AD-V1" I R 6150 4900 50
 F6 "AD-I2" I L 5150 4950 50 
 F7 "AD-V2" I L 5150 5050 50 
 F8 "AOUT" O R 6150 4700 50 
-F9 "PE" I L 5150 6550 50 
+F9 "PE" I R 6150 6900 50 
 F10 "MODBUS-A" O R 6150 6350 50 
 F11 "MODBUS-B" O R 6150 6450 50 
 F12 "K1-IS-ON" I R 6150 6100 50 
 F13 "~K1-ON" O R 6150 5700 50 
-F14 "L" I L 5150 6350 50 
-F15 "N" I L 5150 6450 50 
+F14 "L" I R 6150 6700 50 
+F15 "N" I R 6150 6800 50 
 F16 "K2-IS-ON" I L 5150 6100 50 
 F17 "~K2-ON" O L 5150 5700 50 
 F18 "VREF+2V5" O L 5150 4800 50 
 F19 "VREF-2V5" O L 5150 4700 50 
+F20 "EV1X" I L 5150 6700 50 
+F21 "EV2X" I L 5150 6800 50 
 $EndSheet
 Wire Wire Line
-	5150 6350 4650 6350
+	6650 6700 6150 6700
 Wire Wire Line
-	5150 6450 4650 6450
-Text Label 4725 6350 0    50   ~ 0
+	6650 6800 6150 6800
+Text Label 6225 6700 0    50   ~ 0
 230V-L
-Text Label 4725 6450 0    50   ~ 0
+Text Label 6225 6800 0    50   ~ 0
 230V-N
 $Comp
 L _project:PE #PWR0128
 U 1 1 5E4D44A3
-P 4900 6650
-F 0 "#PWR0128" H 5150 6500 50  0001 C CNN
-F 1 "PE" H 4900 6327 50  0000 C CNN
-F 2 "" H 4900 6550 50  0001 C CNN
-F 3 "~" H 4900 6550 50  0001 C CNN
-	1    4900 6650
+P 6300 7000
+F 0 "#PWR0128" H 6550 6850 50  0001 C CNN
+F 1 "PE" H 6300 6677 50  0000 C CNN
+F 2 "" H 6300 6900 50  0001 C CNN
+F 3 "~" H 6300 6900 50  0001 C CNN
+	1    6300 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1574,15 +1567,15 @@ F 3 "" H 8580 3125 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9725 3500 8700 3500
+	9750 3500 8700 3500
 Wire Wire Line
-	9725 3400 9400 3400
+	9750 3400 9400 3400
 Wire Wire Line
 	9100 3400 8900 3400
 Wire Wire Line
 	8900 3400 8900 3125
 Wire Wire Line
-	9550 3300 9725 3300
+	9500 3300 9750 3300
 Wire Wire Line
 	8300 3600 8300 4200
 Wire Wire Line
@@ -1595,20 +1588,20 @@ Connection ~ 8700 3500
 Wire Wire Line
 	8700 3500 8700 3600
 Wire Wire Line
-	9550 3200 9550 3300
-Text Label 9725 3400 2    50   ~ 0
+	9500 3200 9500 3300
+Text Label 9750 3400 2    50   ~ 0
 ~EV1ON
 Wire Wire Line
 	3000 3600 3000 4200
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5EC3C43D
-P 9550 3200
-F 0 "TP4" H 9500 3400 50  0000 L CNN
-F 1 "TestPoint" H 9608 3229 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 9750 3200 50  0001 C CNN
-F 3 "~" H 9750 3200 50  0001 C CNN
-	1    9550 3200
+P 9500 3200
+F 0 "TP4" H 9450 3400 50  0000 L CNN
+F 1 "TestPoint" H 9558 3229 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 9700 3200 50  0001 C CNN
+F 3 "~" H 9700 3200 50  0001 C CNN
+	1    9500 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1649,7 +1642,7 @@ $EndComp
 Wire Wire Line
 	2600 3150 2600 2900
 Wire Wire Line
-	1650 3150 2600 3150
+	1500 3150 2600 3150
 Wire Wire Line
 	2600 3150 2600 3200
 Connection ~ 2600 3150
@@ -1672,7 +1665,7 @@ Wire Wire Line
 	2600 2300 2600 2250
 Text Label 1650 3700 0    50   ~ 0
 PE
-Text Label 1600 3150 0    50   ~ 0
+Text Label 1550 3150 0    50   ~ 0
 GND
 Connection ~ 2850 3900
 Wire Wire Line
@@ -1686,7 +1679,7 @@ Text Notes 1025 3900 0    50   ~ 0
 PE\nN-EV2\nN-K2
 Text Notes 1025 4725 0    50   ~ 0
 K2-A1\nK2-A2
-Text Notes 825  3200 0    50   ~ 0
+Text Notes 775  3200 0    50   ~ 0
 -\nKEY-EV2ON\nGND\nCP-EV2
 $Comp
 L _project:SW_SS13F06-G5 SW2
@@ -1801,10 +1794,6 @@ Wire Wire Line
 	3450 5450 3450 5300
 Wire Wire Line
 	3450 5300 3950 5300
-Wire Wire Line
-	5150 6550 4900 6550
-Wire Wire Line
-	4900 6550 4900 6650
 Connection ~ 4150 4900
 Connection ~ 7375 4900
 Connection ~ 3100 5200
@@ -1816,4 +1805,245 @@ Wire Wire Line
 	5050 4700 5050 4300
 Wire Wire Line
 	5050 4300 5275 4300
+Wire Wire Line
+	4300 3750 4350 3750
+Wire Wire Line
+	4350 3550 4350 3750
+Connection ~ 4350 3750
+Wire Wire Line
+	4350 3750 4450 3750
+Wire Wire Line
+	6300 6900 6300 7000
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5E398BE6
+P 2400 1450
+F 0 "#FLG0103" H 2400 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 1623 50  0000 C CNN
+F 2 "" H 2400 1450 50  0001 C CNN
+F 3 "~" H 2400 1450 50  0001 C CNN
+	1    2400 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 1250 2400 1450
+Connection ~ 2400 1250
+Wire Wire Line
+	2400 1250 3150 1250
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5E69E9C6
+P 5050 800
+F 0 "#FLG0104" H 5050 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 974 50  0000 C CNN
+F 2 "" H 5050 800 50  0001 C CNN
+F 3 "~" H 5050 800 50  0001 C CNN
+	1    5050 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 800  5050 1050
+Connection ~ 5050 1050
+Wire Wire Line
+	5050 1050 5250 1050
+Wire Wire Line
+	6300 6900 6150 6900
+Text Label 1550 2950 0    50   ~ 0
+EV2TP
+Wire Wire Line
+	1500 2950 1800 2950
+Text Label 9750 3300 2    50   ~ 0
+EV1TP
+Text Label 2650 6700 0    50   ~ 0
+EV1TP
+Text Label 2650 6900 0    50   ~ 0
+EV2TP
+$Comp
+L Device:R R96
+U 1 1 5E90EAF0
+P 4500 7100
+F 0 "R96" H 4650 7050 50  0000 C CNN
+F 1 "47K" H 4625 7175 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 4430 7100 50  0001 C CNN
+F 3 "~" H 4500 7100 50  0001 C CNN
+	1    4500 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R97
+U 1 1 5E90ECFA
+P 4700 7100
+F 0 "R97" H 4575 7050 50  0000 C CNN
+F 1 "47K" H 4575 7175 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 4630 7100 50  0001 C CNN
+F 3 "~" H 4700 7100 50  0001 C CNN
+	1    4700 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0249
+U 1 1 5E90F915
+P 4150 7050
+F 0 "#PWR0249" H 4150 6900 50  0001 C CNN
+F 1 "+5V" H 4150 7200 50  0000 C CNN
+F 2 "" H 4150 7050 50  0001 C CNN
+F 3 "" H 4150 7050 50  0001 C CNN
+	1    4150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R94
+U 1 1 5E90F91C
+P 3100 6700
+F 0 "R94" V 3000 6600 50  0000 C CNN
+F 1 "100R" V 3000 6800 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 3030 6700 50  0001 C CNN
+F 3 "~" H 3100 6700 50  0001 C CNN
+	1    3100 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L _project:BAT54S D?
+U 1 1 5E90F923
+P 3800 6400
+AR Path="/5E0A3961/5F6ED0C4/5E90F923" Ref="D?"  Part="1" 
+AR Path="/5E90F923" Ref="D9"  Part="1" 
+F 0 "D9" V 3800 6475 50  0000 L CNN
+F 1 "BAT54S" V 3755 6488 50  0001 L CNN
+F 2 "Project:sot-23_hand-soldering" H 3875 6525 50  0001 L CNN
+F 3 "" H 3680 6400 50  0001 C CNN
+	1    3800 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L _project:BAT54S D?
+U 1 1 5E9388FC
+P 3800 7100
+AR Path="/5E0A3961/5F6ED0C4/5E9388FC" Ref="D?"  Part="1" 
+AR Path="/5E9388FC" Ref="D17"  Part="1" 
+F 0 "D17" V 3800 7175 50  0000 L CNN
+F 1 "BAT54S" V 3755 7188 50  0001 L CNN
+F 2 "Project:sot-23_hand-soldering" H 3875 7225 50  0001 L CNN
+F 3 "" H 3680 7100 50  0001 C CNN
+	1    3800 7100
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R95
+U 1 1 5E938BAF
+P 3100 6900
+F 0 "R95" V 3000 6800 50  0000 C CNN
+F 1 "100R" V 3000 7000 50  0000 C CNN
+F 2 "Project:r-0805-hand-soldering" V 3030 6900 50  0001 C CNN
+F 3 "~" H 3100 6900 50  0001 C CNN
+	1    3100 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0250
+U 1 1 5E94D623
+P 3450 7150
+F 0 "#PWR0250" H 3450 6900 50  0001 C CNN
+F 1 "GND" H 3450 7000 50  0000 C CNN
+F 2 "" H 3450 7150 50  0001 C CNN
+F 3 "" H 3450 7150 50  0001 C CNN
+	1    3450 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0251
+U 1 1 5E94D6BE
+P 3450 6450
+F 0 "#PWR0251" H 3450 6200 50  0001 C CNN
+F 1 "GND" H 3450 6300 50  0000 C CNN
+F 2 "" H 3450 6450 50  0001 C CNN
+F 3 "" H 3450 6450 50  0001 C CNN
+	1    3450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0252
+U 1 1 5E94D759
+P 4600 7350
+F 0 "#PWR0252" H 4600 7100 50  0001 C CNN
+F 1 "GND" H 4600 7200 50  0000 C CNN
+F 2 "" H 4600 7350 50  0001 C CNN
+F 3 "" H 4600 7350 50  0001 C CNN
+	1    4600 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0253
+U 1 1 5E94D8DE
+P 4150 6350
+F 0 "#PWR0253" H 4150 6200 50  0001 C CNN
+F 1 "+5V" H 4150 6500 50  0000 C CNN
+F 2 "" H 4150 6350 50  0001 C CNN
+F 3 "" H 4150 6350 50  0001 C CNN
+	1    4150 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6700 3800 6700
+Wire Wire Line
+	3500 6800 3500 6900
+Wire Wire Line
+	3500 6900 3250 6900
+Wire Wire Line
+	3500 6800 3800 6800
+Wire Wire Line
+	3800 6900 3800 6800
+Connection ~ 3800 6800
+Wire Wire Line
+	3800 6800 4700 6800
+Wire Wire Line
+	3800 6600 3800 6700
+Connection ~ 3800 6700
+Wire Wire Line
+	3800 6700 4500 6700
+Wire Wire Line
+	3500 6400 3450 6400
+Wire Wire Line
+	3450 6400 3450 6450
+Wire Wire Line
+	4150 6350 4150 6400
+Wire Wire Line
+	4150 6400 4100 6400
+Wire Wire Line
+	3450 7150 3450 7100
+Wire Wire Line
+	3450 7100 3500 7100
+Wire Wire Line
+	4100 7100 4150 7100
+Wire Wire Line
+	4150 7100 4150 7050
+Wire Wire Line
+	4500 6950 4500 6700
+Connection ~ 4500 6700
+Wire Wire Line
+	4500 6700 5150 6700
+Wire Wire Line
+	4700 6950 4700 6800
+Connection ~ 4700 6800
+Wire Wire Line
+	4700 6800 5150 6800
+Wire Wire Line
+	4500 7250 4500 7300
+Wire Wire Line
+	4500 7300 4600 7300
+Wire Wire Line
+	4700 7300 4700 7250
+Wire Wire Line
+	4600 7350 4600 7300
+Connection ~ 4600 7300
+Wire Wire Line
+	4600 7300 4700 7300
+Wire Wire Line
+	2950 6700 2600 6700
+Wire Wire Line
+	2950 6900 2600 6900
+Text Label 4825 6800 0    50   ~ 0
+EV2X
+Text Label 4825 6700 0    50   ~ 0
+EV1X
 $EndSCHEMATC
