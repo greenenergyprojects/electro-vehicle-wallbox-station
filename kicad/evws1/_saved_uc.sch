@@ -2045,11 +2045,11 @@ Wire Wire Line
 Connection ~ 10250 4125
 Wire Wire Line
 	10250 4125 10500 4125
-Text Label 10650 3250 0    50   ~ 0
-AIN0
 Text Label 10650 3350 0    50   ~ 0
-AIN1
+AIN0
 Text Label 10650 3450 0    50   ~ 0
+AIN1
+Text Label 10650 3550 0    50   ~ 0
 AIN2
 $Comp
 L Device:R R64
@@ -2088,7 +2088,7 @@ Wire Wire Line
 Connection ~ 10000 3350
 Connection ~ 10250 3450
 Connection ~ 10500 3550
-Text Label 10650 3550 0    50   ~ 0
+Text Label 10650 3650 0    50   ~ 0
 AIN3
 Wire Wire Line
 	9750 3650 9750 3550
@@ -2884,10 +2884,10 @@ Wire Wire Line
 Wire Wire Line
 	10900 1900 10900 1850
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J25
 U 1 1 5FF59D61
 P 10850 2350
-F 0 "J?" H 10875 2050 50  0000 C CNN
+F 0 "J25" H 10875 2050 50  0000 C CNN
 F 1 "header" H 10875 2550 50  0000 C CNN
 F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 10850 2350 50  0001 C CNN
 F 3 "~" H 10850 2350 50  0001 C CNN
@@ -2899,8 +2899,8 @@ L power:GND #PWR?
 U 1 1 5FF895DD
 P 10650 2500
 AR Path="/5FF895DD" Ref="#PWR?"  Part="1" 
-AR Path="/5E0A3961/5FF895DD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10650 2250 50  0001 C CNN
+AR Path="/5E0A3961/5FF895DD" Ref="#PWR0265"  Part="1" 
+F 0 "#PWR0265" H 10650 2250 50  0001 C CNN
 F 1 "GND" H 10650 2350 50  0000 C CNN
 F 2 "" H 10650 2500 50  0001 C CNN
 F 3 "" H 10650 2500 50  0001 C CNN
