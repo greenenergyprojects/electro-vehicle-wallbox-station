@@ -59,7 +59,7 @@ AR Path="/5E35B26B" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E35B26B" Ref="R59"  Part="1" 
 F 0 "R59" V 3200 2450 50  0000 C CNN
 F 1 "100R" V 3200 2650 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 3230 2550 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 3230 2550 50  0001 C CNN
 F 3 "~" H 3300 2550 50  0001 C CNN
 	1    3300 2550
 	0    1    1    0   
@@ -67,14 +67,14 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5E35B7FA
-P 1300 4900
+P 1300 2150
 AR Path="/5E0A3961/5E35B7FA" Ref="C?"  Part="1" 
 AR Path="/5E377C07/5E35B7FA" Ref="C40"  Part="1" 
-F 0 "C40" H 1400 4825 50  0000 C CNN
-F 1 "100n" H 1425 4975 50  0000 C CNN
-F 2 "Project:c-1206-hand-soldering" H 1300 4900 50  0001 C CNN
-F 3 "~" H 1300 4900 50  0001 C CNN
-	1    1300 4900
+F 0 "C40" H 1400 2075 50  0000 C CNN
+F 1 "100n" H 1425 2225 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 1300 2150 50  0001 C CNN
+F 3 "~" H 1300 2150 50  0001 C CNN
+	1    1300 2150
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -187,64 +187,31 @@ Connection ~ 7150 4150
 Wire Wire Line
 	7150 4150 7750 4150
 $Comp
-L _project:LM224 U13
-U 1 1 5E35CF26
-P 4050 2650
-F 0 "U13" H 4075 2375 50  0000 C CNN
-F 1 "LM224" H 4125 2475 50  0000 C CNN
-F 2 "Project:soic-16_hand-soldering" H 4000 2750 50  0001 C CNN
-F 3 "" H 4100 2850 50  0001 C CNN
-	1    4050 2650
-	1    0    0    1   
-$EndComp
-$Comp
-L _project:LM224 U13
-U 2 1 5E35D093
-P 5800 2750
-F 0 "U13" H 5850 2500 50  0000 C CNN
-F 1 "LM224" H 5900 2600 50  0000 C CNN
-F 2 "Project:soic-16_hand-soldering" H 5750 2850 50  0001 C CNN
-F 3 "" H 5850 2950 50  0001 C CNN
-	2    5800 2750
-	1    0    0    1   
-$EndComp
-$Comp
-L _project:LM224 U13
-U 5 1 5E35D26B
-P 1700 5150
-F 0 "U13" H 1658 5196 50  0000 L CNN
-F 1 "LM224" H 1658 5105 50  0000 L CNN
-F 2 "Project:soic-16_hand-soldering" H 1650 5250 50  0001 C CNN
-F 3 "" H 1750 5350 50  0001 C CNN
-	5    1700 5150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR?
 U 1 1 5E35D6EF
-P 1600 4650
+P 1600 1900
 AR Path="/5E35D6EF" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5E35D6EF" Ref="#PWR?"  Part="1" 
 AR Path="/5E377C07/5E35D6EF" Ref="#PWR0186"  Part="1" 
-F 0 "#PWR0186" H 1600 4500 50  0001 C CNN
-F 1 "+12V" H 1615 4823 50  0000 C CNN
-F 2 "" H 1600 4650 50  0001 C CNN
-F 3 "" H 1600 4650 50  0001 C CNN
-	1    1600 4650
+F 0 "#PWR0186" H 1600 1750 50  0001 C CNN
+F 1 "+12V" H 1615 2073 50  0000 C CNN
+F 2 "" H 1600 1900 50  0001 C CNN
+F 3 "" H 1600 1900 50  0001 C CNN
+	1    1600 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-12V #PWR?
 U 1 1 5E35D6F5
-P 1600 5550
+P 1600 2850
 AR Path="/5E35D6F5" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5E35D6F5" Ref="#PWR?"  Part="1" 
 AR Path="/5E377C07/5E35D6F5" Ref="#PWR0188"  Part="1" 
-F 0 "#PWR0188" H 1600 5650 50  0001 C CNN
-F 1 "-12V" H 1615 5723 50  0000 C CNN
-F 2 "" H 1600 5550 50  0001 C CNN
-F 3 "" H 1600 5550 50  0001 C CNN
-	1    1600 5550
+F 0 "#PWR0188" H 1600 2950 50  0001 C CNN
+F 1 "-12V" H 1615 3023 50  0000 C CNN
+F 2 "" H 1600 2850 50  0001 C CNN
+F 3 "" H 1600 2850 50  0001 C CNN
+	1    1600 2850
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -288,7 +255,7 @@ AR Path="/5E36123E" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E36123E" Ref="R83"  Part="1" 
 F 0 "R83" V 4950 2550 50  0000 C CNN
 F 1 "3K3" V 4950 2750 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 4980 2650 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 4980 2650 50  0001 C CNN
 F 3 "~" H 5050 2650 50  0001 C CNN
 	1    5050 2650
 	0    1    1    0   
@@ -336,7 +303,7 @@ AR Path="/5E365F01" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E365F01" Ref="R89"  Part="1" 
 F 0 "R89" V 5750 2150 50  0000 C CNN
 F 1 "10K" V 5750 2350 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5780 2250 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5780 2250 50  0001 C CNN
 F 3 "~" H 5850 2250 50  0001 C CNN
 	1    5850 2250
 	0    1    1    0   
@@ -352,8 +319,8 @@ L Device:R_POT_TRIM RV?
 U 1 1 5E3697AD
 P 5050 1100
 AR Path="/5E0A3961/5E3697AD" Ref="RV?"  Part="1" 
-AR Path="/5E377C07/5E3697AD" Ref="RV4"  Part="1" 
-F 0 "RV4" V 4950 1075 50  0000 R CNN
+AR Path="/5E377C07/5E3697AD" Ref="RV3"  Part="1" 
+F 0 "RV3" V 4950 1075 50  0000 R CNN
 F 1 "1K" V 4950 1250 50  0000 R CNN
 F 2 "Project:trimmer-tht-3296" H 5050 1100 50  0001 C CNN
 F 3 "~" H 5050 1100 50  0001 C CNN
@@ -368,7 +335,7 @@ AR Path="/5E3714FE" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E3714FE" Ref="R85"  Part="1" 
 F 0 "R85" H 5250 1300 50  0000 C CNN
 F 1 "15K" H 5250 1400 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5330 1350 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5330 1350 50  0001 C CNN
 F 3 "~" H 5400 1350 50  0001 C CNN
 	1    5400 1350
 	-1   0    0    1   
@@ -381,7 +348,7 @@ AR Path="/5E371552" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E371552" Ref="R86"  Part="1" 
 F 0 "R86" H 5250 1650 50  0000 C CNN
 F 1 "4K7" H 5250 1750 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5330 1700 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5330 1700 50  0001 C CNN
 F 3 "~" H 5400 1700 50  0001 C CNN
 	1    5400 1700
 	-1   0    0    1   
@@ -406,7 +373,7 @@ AR Path="/5E377740" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E377740" Ref="R81"  Part="1" 
 F 0 "R81" V 3825 1875 50  0000 C CNN
 F 1 "820R" V 3825 2100 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 3880 2000 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 3880 2000 50  0001 C CNN
 F 3 "~" H 3950 2000 50  0001 C CNN
 	1    3950 2000
 	0    1    1    0   
@@ -506,40 +473,18 @@ AR Path="/5EA0C7A6" Ref="R?"  Part="1"
 AR Path="/5E377C07/5EA0C7A6" Ref="R60"  Part="1" 
 F 0 "R60" V 3200 5500 50  0000 C CNN
 F 1 "100R" V 3200 5700 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 3230 5600 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 3230 5600 50  0001 C CNN
 F 3 "~" H 3300 5600 50  0001 C CNN
 	1    3300 5600
 	0    1    1    0   
-$EndComp
-$Comp
-L _project:LM224 U13
-U 3 1 5EA0C7AD
-P 4050 5700
-F 0 "U13" H 4075 5425 50  0000 C CNN
-F 1 "LM224" H 4125 5525 50  0000 C CNN
-F 2 "Project:soic-16_hand-soldering" H 4000 5800 50  0001 C CNN
-F 3 "" H 4100 5900 50  0001 C CNN
-	3    4050 5700
-	1    0    0    1   
-$EndComp
-$Comp
-L _project:LM224 U13
-U 4 1 5EA0C7B4
-P 5800 5800
-F 0 "U13" H 5850 5550 50  0000 C CNN
-F 1 "LM224" H 5900 5650 50  0000 C CNN
-F 2 "Project:soic-16_hand-soldering" H 5750 5900 50  0001 C CNN
-F 3 "" H 5850 6000 50  0001 C CNN
-	4    5800 5800
-	1    0    0    1   
 $EndComp
 $Comp
 L Device:R_POT_TRIM RV?
 U 1 1 5EA0C7BB
 P 4400 5050
 AR Path="/5E0A3961/5EA0C7BB" Ref="RV?"  Part="1" 
-AR Path="/5E377C07/5EA0C7BB" Ref="RV3"  Part="1" 
-F 0 "RV3" V 4275 5025 50  0000 R CNN
+AR Path="/5E377C07/5EA0C7BB" Ref="RV4"  Part="1" 
+F 0 "RV4" V 4275 5025 50  0000 R CNN
 F 1 "100R" V 4275 5250 50  0000 R CNN
 F 2 "Project:trimmer-tht-3296" H 4400 5050 50  0001 C CNN
 F 3 "~" H 4400 5050 50  0001 C CNN
@@ -572,7 +517,7 @@ AR Path="/5EA0C7CC" Ref="R?"  Part="1"
 AR Path="/5E377C07/5EA0C7CC" Ref="R84"  Part="1" 
 F 0 "R84" V 4900 5600 50  0000 C CNN
 F 1 "3K3" V 4900 5800 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 4930 5700 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 4930 5700 50  0001 C CNN
 F 3 "~" H 5000 5700 50  0001 C CNN
 	1    5000 5700
 	0    1    1    0   
@@ -615,7 +560,7 @@ AR Path="/5EA0C7E4" Ref="R?"  Part="1"
 AR Path="/5E377C07/5EA0C7E4" Ref="R90"  Part="1" 
 F 0 "R90" V 5750 5200 50  0000 C CNN
 F 1 "10K" V 5750 5400 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5780 5300 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5780 5300 50  0001 C CNN
 F 3 "~" H 5850 5300 50  0001 C CNN
 	1    5850 5300
 	0    1    1    0   
@@ -647,7 +592,7 @@ AR Path="/5EA0C7F5" Ref="R?"  Part="1"
 AR Path="/5E377C07/5EA0C7F5" Ref="R87"  Part="1" 
 F 0 "R87" H 5275 4350 50  0000 C CNN
 F 1 "15K" H 5275 4450 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5330 4400 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5330 4400 50  0001 C CNN
 F 3 "~" H 5400 4400 50  0001 C CNN
 	1    5400 4400
 	-1   0    0    1   
@@ -660,7 +605,7 @@ AR Path="/5EA0C7FC" Ref="R?"  Part="1"
 AR Path="/5E377C07/5EA0C7FC" Ref="R88"  Part="1" 
 F 0 "R88" H 5275 4700 50  0000 C CNN
 F 1 "4K7" H 5275 4800 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5330 4750 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5330 4750 50  0001 C CNN
 F 3 "~" H 5400 4750 50  0001 C CNN
 	1    5400 4750
 	-1   0    0    1   
@@ -685,7 +630,7 @@ AR Path="/5EA0C80A" Ref="R?"  Part="1"
 AR Path="/5E377C07/5EA0C80A" Ref="R82"  Part="1" 
 F 0 "R82" V 3825 4925 50  0000 C CNN
 F 1 "820R" V 3825 5150 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 3880 5050 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 3880 5050 50  0001 C CNN
 F 3 "~" H 3950 5050 50  0001 C CNN
 	1    3950 5050
 	0    1    1    0   
@@ -759,32 +704,32 @@ Wire Wire Line
 Wire Wire Line
 	4900 4150 2300 4150
 Wire Wire Line
-	1600 5550 1600 5450
+	1600 2850 1600 2800
 Wire Wire Line
-	1600 4850 1600 4750
+	1600 2100 1600 2000
 Wire Wire Line
-	1600 4750 1300 4750
-Connection ~ 1600 4750
+	1600 2000 1300 2000
+Connection ~ 1600 2000
 Wire Wire Line
-	1600 4750 1600 4650
+	1600 2000 1600 1900
 Wire Wire Line
-	1300 4750 1300 4800
+	1300 2000 1300 2050
 $Comp
 L power:GND #PWR?
 U 1 1 5EA3BE25
-P 1300 5150
+P 950 2500
 AR Path="/5EA3BE25" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5EA3BE25" Ref="#PWR?"  Part="1" 
 AR Path="/5E377C07/5EA3BE25" Ref="#PWR0239"  Part="1" 
-F 0 "#PWR0239" H 1300 4900 50  0001 C CNN
-F 1 "GND" H 1300 5000 50  0000 C CNN
-F 2 "" H 1300 5150 50  0001 C CNN
-F 3 "" H 1300 5150 50  0001 C CNN
-	1    1300 5150
+F 0 "#PWR0239" H 950 2250 50  0001 C CNN
+F 1 "GND" H 950 2350 50  0000 C CNN
+F 2 "" H 950 2500 50  0001 C CNN
+F 3 "" H 950 2500 50  0001 C CNN
+	1    950  2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 5150 1300 5000
+	1300 2550 1300 2400
 $Comp
 L Device:R R?
 U 1 1 5E77A83F
@@ -793,7 +738,7 @@ AR Path="/5E77A83F" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E77A83F" Ref="R6"  Part="1" 
 F 0 "R6" V 6600 2650 50  0000 C CNN
 F 1 "1K" V 6600 2850 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 6630 2750 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 6630 2750 50  0001 C CNN
 F 3 "~" H 6700 2750 50  0001 C CNN
 	1    6700 2750
 	0    1    1    0   
@@ -861,7 +806,7 @@ AR Path="/5E79C77B" Ref="R?"  Part="1"
 AR Path="/5E377C07/5E79C77B" Ref="R7"  Part="1" 
 F 0 "R7" V 6600 5700 50  0000 C CNN
 F 1 "1K" V 6600 5900 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 6630 5800 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 6630 5800 50  0001 C CNN
 F 3 "~" H 6700 5800 50  0001 C CNN
 	1    6700 5800
 	0    1    1    0   
@@ -1018,4 +963,204 @@ Text Label 8200 4150 0    50   ~ 0
 AD-I2
 Text Label 8200 5800 0    50   ~ 0
 AD-V2
+$Comp
+L _project:LM258 U?
+U 1 1 5E3BCD61
+P 4050 2650
+AR Path="/5E0A3961/5E29AFD8/5E3BCD61" Ref="U?"  Part="1" 
+AR Path="/5E377C07/5E3BCD61" Ref="U13"  Part="1" 
+F 0 "U13" H 4100 2950 50  0000 C CNN
+F 1 "LM258" H 4125 2850 50  0000 C CNN
+F 2 "Project:soic-8_hand-soldering" H 5500 2750 50  0001 C CNN
+F 3 "" H 5600 2850 50  0001 C CNN
+	1    4050 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L _project:LM258 U?
+U 2 1 5E3C6D16
+P 5800 2750
+AR Path="/5E0A3961/5E29AFD8/5E3C6D16" Ref="U?"  Part="1" 
+AR Path="/5E377C07/5E3C6D16" Ref="U13"  Part="2" 
+F 0 "U13" H 5850 3050 50  0000 C CNN
+F 1 "LM258" H 5875 2950 50  0000 C CNN
+F 2 "Project:soic-8_hand-soldering" H 7250 2850 50  0001 C CNN
+F 3 "" H 7350 2950 50  0001 C CNN
+	2    5800 2750
+	1    0    0    1   
+$EndComp
+$Comp
+L _project:LM258 U?
+U 1 1 5E3C6D98
+P 4050 5700
+AR Path="/5E0A3961/5E29AFD8/5E3C6D98" Ref="U?"  Part="1" 
+AR Path="/5E377C07/5E3C6D98" Ref="U14"  Part="1" 
+F 0 "U14" H 4100 6000 50  0000 C CNN
+F 1 "LM258" H 4125 5900 50  0000 C CNN
+F 2 "Project:soic-8_hand-soldering" H 5500 5800 50  0001 C CNN
+F 3 "" H 5600 5900 50  0001 C CNN
+	1    4050 5700
+	1    0    0    1   
+$EndComp
+$Comp
+L _project:LM258 U?
+U 2 1 5E3C6E12
+P 5800 5800
+AR Path="/5E0A3961/5E29AFD8/5E3C6E12" Ref="U?"  Part="1" 
+AR Path="/5E377C07/5E3C6E12" Ref="U14"  Part="2" 
+F 0 "U14" H 5850 6100 50  0000 C CNN
+F 1 "LM258" H 5875 6000 50  0000 C CNN
+F 2 "Project:soic-8_hand-soldering" H 7250 5900 50  0001 C CNN
+F 3 "" H 7350 6000 50  0001 C CNN
+	2    5800 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L _project:LM258 U?
+U 3 1 5E3C7360
+P 1600 2400
+AR Path="/5E0A3961/5E29AFD8/5E3C7360" Ref="U?"  Part="1" 
+AR Path="/5E377C07/5E3C7360" Ref="U13"  Part="3" 
+F 0 "U13" H 1775 2450 50  0000 C CNN
+F 1 "LM258" H 1800 2350 50  0000 C CNN
+F 2 "Project:soic-8_hand-soldering" H 3050 2500 50  0001 C CNN
+F 3 "" H 3150 2600 50  0001 C CNN
+	3    1600 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E3F41CB
+P 1300 2650
+AR Path="/5E0A3961/5E3F41CB" Ref="C?"  Part="1" 
+AR Path="/5E377C07/5E3F41CB" Ref="C53"  Part="1" 
+F 0 "C53" H 1400 2575 50  0000 C CNN
+F 1 "100n" H 1425 2725 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 1300 2650 50  0001 C CNN
+F 3 "~" H 1300 2650 50  0001 C CNN
+	1    1300 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 2750 1300 2800
+Wire Wire Line
+	1300 2800 1600 2800
+Connection ~ 1600 2800
+Wire Wire Line
+	1600 2800 1600 2700
+Wire Wire Line
+	1300 2400 950  2400
+Wire Wire Line
+	950  2400 950  2500
+Connection ~ 1300 2400
+Wire Wire Line
+	1300 2400 1300 2250
+$Comp
+L Device:C_Small C?
+U 1 1 5E4187E1
+P 1450 5550
+AR Path="/5E0A3961/5E4187E1" Ref="C?"  Part="1" 
+AR Path="/5E377C07/5E4187E1" Ref="C52"  Part="1" 
+F 0 "C52" H 1550 5475 50  0000 C CNN
+F 1 "100n" H 1575 5625 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 1450 5550 50  0001 C CNN
+F 3 "~" H 1450 5550 50  0001 C CNN
+	1    1450 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E4187E8
+P 1750 5300
+AR Path="/5E4187E8" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5E4187E8" Ref="#PWR?"  Part="1" 
+AR Path="/5E377C07/5E4187E8" Ref="#PWR0266"  Part="1" 
+F 0 "#PWR0266" H 1750 5150 50  0001 C CNN
+F 1 "+12V" H 1765 5473 50  0000 C CNN
+F 2 "" H 1750 5300 50  0001 C CNN
+F 3 "" H 1750 5300 50  0001 C CNN
+	1    1750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E4187EE
+P 1750 6250
+AR Path="/5E4187EE" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5E4187EE" Ref="#PWR?"  Part="1" 
+AR Path="/5E377C07/5E4187EE" Ref="#PWR0267"  Part="1" 
+F 0 "#PWR0267" H 1750 6350 50  0001 C CNN
+F 1 "-12V" H 1765 6423 50  0000 C CNN
+F 2 "" H 1750 6250 50  0001 C CNN
+F 3 "" H 1750 6250 50  0001 C CNN
+	1    1750 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 6250 1750 6200
+Wire Wire Line
+	1750 5500 1750 5400
+Wire Wire Line
+	1750 5400 1450 5400
+Connection ~ 1750 5400
+Wire Wire Line
+	1750 5400 1750 5300
+Wire Wire Line
+	1450 5400 1450 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5E4187FA
+P 1100 5900
+AR Path="/5E4187FA" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5E4187FA" Ref="#PWR?"  Part="1" 
+AR Path="/5E377C07/5E4187FA" Ref="#PWR0268"  Part="1" 
+F 0 "#PWR0268" H 1100 5650 50  0001 C CNN
+F 1 "GND" H 1100 5750 50  0000 C CNN
+F 2 "" H 1100 5900 50  0001 C CNN
+F 3 "" H 1100 5900 50  0001 C CNN
+	1    1100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5950 1450 5800
+$Comp
+L _project:LM258 U?
+U 3 1 5E418801
+P 1750 5800
+AR Path="/5E0A3961/5E29AFD8/5E418801" Ref="U?"  Part="1" 
+AR Path="/5E377C07/5E418801" Ref="U14"  Part="3" 
+F 0 "U14" H 1925 5850 50  0000 C CNN
+F 1 "LM258" H 1950 5750 50  0000 C CNN
+F 2 "Project:soic-8_hand-soldering" H 3200 5900 50  0001 C CNN
+F 3 "" H 3300 6000 50  0001 C CNN
+	3    1750 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5E418808
+P 1450 6050
+AR Path="/5E0A3961/5E418808" Ref="C?"  Part="1" 
+AR Path="/5E377C07/5E418808" Ref="C54"  Part="1" 
+F 0 "C54" H 1550 5975 50  0000 C CNN
+F 1 "100n" H 1575 6125 50  0000 C CNN
+F 2 "Project:c-1206-hand-soldering" H 1450 6050 50  0001 C CNN
+F 3 "~" H 1450 6050 50  0001 C CNN
+	1    1450 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 6150 1450 6200
+Wire Wire Line
+	1450 6200 1750 6200
+Connection ~ 1750 6200
+Wire Wire Line
+	1750 6200 1750 6100
+Wire Wire Line
+	1450 5800 1100 5800
+Wire Wire Line
+	1100 5800 1100 5900
+Connection ~ 1450 5800
+Wire Wire Line
+	1450 5800 1450 5650
 $EndSCHEMATC

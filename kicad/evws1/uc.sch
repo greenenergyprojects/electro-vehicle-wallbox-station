@@ -61,7 +61,7 @@ U 1 1 5E1456C1
 P 1300 1250
 F 0 "SW3" H 1300 1425 50  0000 C CNN
 F 1 "SW_Push" H 1300 1444 50  0001 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_FSMSM" H 1300 1450 50  0001 C CNN
+F 2 "Project:push-button-smd-4.5x4.5mm-black" H 1300 1450 50  0001 C CNN
 F 3 "" H 1300 1450 50  0001 C CNN
 	1    1300 1250
 	1    0    0    -1  
@@ -434,7 +434,7 @@ U 1 1 5E1A5A2B
 P 1850 1250
 F 0 "R19" H 1700 1275 50  0000 C CNN
 F 1 "47K" H 1725 1175 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 1780 1250 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 1780 1250 50  0001 C CNN
 F 3 "~" H 1850 1250 50  0001 C CNN
 	1    1850 1250
 	1    0    0    -1  
@@ -832,7 +832,7 @@ U 1 1 5E4444AB
 P 1050 6600
 F 0 "R20" H 900 6625 50  0000 C CNN
 F 1 "22R" H 925 6525 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 980 6600 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 980 6600 50  0001 C CNN
 F 3 "~" H 1050 6600 50  0001 C CNN
 	1    1050 6600
 	1    0    0    -1  
@@ -845,7 +845,7 @@ U 1 1 5E45F8E7
 P 1400 7350
 F 0 "R21" H 1250 7375 50  0000 C CNN
 F 1 "47K" H 1275 7275 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 1330 7350 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 1330 7350 50  0001 C CNN
 F 3 "~" H 1400 7350 50  0001 C CNN
 	1    1400 7350
 	1    0    0    -1  
@@ -880,7 +880,7 @@ U 1 1 5E47C5C0
 P 2000 6975
 F 0 "R22" H 1875 7025 50  0000 C CNN
 F 1 "220R" H 1825 6925 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 1930 6975 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 1930 6975 50  0001 C CNN
 F 3 "~" H 2000 6975 50  0001 C CNN
 	1    2000 6975
 	1    0    0    -1  
@@ -929,7 +929,7 @@ U 1 1 5E5F0100
 P 2250 6450
 F 0 "R23" H 2125 6550 50  0000 C CNN
 F 1 "47K" H 2125 6475 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 2180 6450 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 2180 6450 50  0001 C CNN
 F 3 "~" H 2250 6450 50  0001 C CNN
 	1    2250 6450
 	1    0    0    -1  
@@ -1132,7 +1132,7 @@ U 1 1 5E37220E
 P 5400 1100
 F 0 "BT1" H 5425 1075 50  0000 L CNN
 F 1 "3V" H 5300 1225 50  0000 L CNN
-F 2 "Project:knob-battery-holder-horizontal-tht" V 5400 1160 50  0001 C CNN
+F 2 "Project:knob-battery-holder-vertical-tht" V 5400 1160 50  0001 C CNN
 F 3 "~" V 5400 1160 50  0001 C CNN
 	1    5400 1100
 	1    0    0    -1  
@@ -1151,7 +1151,7 @@ F 3 "" H 5400 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 1250 5400 1200
+	5400 1250 5400 1225
 $Comp
 L power:+BATT #PWR?
 U 1 1 5E39A133
@@ -1269,7 +1269,7 @@ U 1 1 5E5665BC
 P 5900 1750
 F 0 "R26" H 5775 1800 50  0000 C CNN
 F 1 "0R" H 5775 1725 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5830 1750 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5830 1750 50  0001 C CNN
 F 3 "~" H 5900 1750 50  0001 C CNN
 	1    5900 1750
 	1    0    0    -1  
@@ -1332,7 +1332,7 @@ U 1 1 5E61CE3F
 P 7175 1450
 F 0 "R30" H 7300 1500 50  0000 C CNN
 F 1 "0R" H 7275 1400 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 7105 1450 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 7105 1450 50  0001 C CNN
 F 3 "~" H 7175 1450 50  0001 C CNN
 	1    7175 1450
 	1    0    0    -1  
@@ -1343,7 +1343,7 @@ U 1 1 5E61CF9E
 P 6900 1425
 F 0 "R29" H 6775 1475 50  0000 C CNN
 F 1 "0R" H 6775 1400 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 6830 1425 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 6830 1425 50  0001 C CNN
 F 3 "~" H 6900 1425 50  0001 C CNN
 	1    6900 1425
 	1    0    0    -1  
@@ -1423,10 +1423,6 @@ Wire Wire Line
 	8450 1400 8675 1400
 Wire Wire Line
 	8675 1400 8675 1475
-Text HLabel 8725 1200 2    50   Output ~ 0
-AOUT
-Wire Wire Line
-	8725 1200 8450 1200
 Wire Wire Line
 	8450 1100 8725 1100
 Wire Wire Line
@@ -1502,7 +1498,7 @@ U 1 1 5EA37EFD
 P 9100 1550
 F 0 "R31" H 9225 1600 50  0000 C CNN
 F 1 "0R" H 9200 1500 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9030 1550 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9030 1550 50  0001 C CNN
 F 3 "~" H 9100 1550 50  0001 C CNN
 	1    9100 1550
 	1    0    0    -1  
@@ -1545,7 +1541,7 @@ U 1 1 5EB6A4DC
 P 10700 1900
 F 0 "R32" V 10600 1800 50  0000 C CNN
 F 1 "47K" V 10600 1975 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 10630 1900 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10630 1900 50  0001 C CNN
 F 3 "~" H 10700 1900 50  0001 C CNN
 	1    10700 1900
 	0    1    1    0   
@@ -1579,7 +1575,7 @@ U 1 1 5EEEC1B5
 P 6900 2925
 F 0 "R28" H 7025 2975 50  0000 C CNN
 F 1 "10K" H 7025 2875 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 6830 2925 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 6830 2925 50  0001 C CNN
 F 3 "~" H 6900 2925 50  0001 C CNN
 	1    6900 2925
 	1    0    0    -1  
@@ -1590,7 +1586,7 @@ U 1 1 5EF01EF1
 P 6500 2925
 F 0 "R27" H 6375 2975 50  0000 C CNN
 F 1 "10K" H 6375 2875 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 6430 2925 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 6430 2925 50  0001 C CNN
 F 3 "~" H 6500 2925 50  0001 C CNN
 	1    6500 2925
 	1    0    0    -1  
@@ -1601,7 +1597,7 @@ U 1 1 5EF01F7D
 P 10775 4800
 F 0 "R34" H 10900 4850 50  0000 C CNN
 F 1 "22K" H 10900 4750 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 10705 4800 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10705 4800 50  0001 C CNN
 F 3 "~" H 10775 4800 50  0001 C CNN
 	1    10775 4800
 	1    0    0    -1  
@@ -1665,7 +1661,7 @@ U 1 1 5F21C580
 P 10775 4225
 F 0 "R33" H 10900 4275 50  0000 C CNN
 F 1 "22K" H 10900 4175 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 10705 4225 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10705 4225 50  0001 C CNN
 F 3 "~" H 10775 4225 50  0001 C CNN
 	1    10775 4225
 	1    0    0    -1  
@@ -1897,7 +1893,7 @@ U 1 1 5E7D61CF
 P 10000 3100
 F 0 "R66" H 10125 3150 50  0000 C CNN
 F 1 "15K" H 10125 3050 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9930 3100 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9930 3100 50  0001 C CNN
 F 3 "~" H 10000 3100 50  0001 C CNN
 	1    10000 3100
 	1    0    0    -1  
@@ -1908,7 +1904,7 @@ U 1 1 5E7D63F3
 P 10250 3100
 F 0 "R68" H 10375 3150 50  0000 C CNN
 F 1 "18K" H 10375 3050 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 10180 3100 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10180 3100 50  0001 C CNN
 F 3 "~" H 10250 3100 50  0001 C CNN
 	1    10250 3100
 	1    0    0    -1  
@@ -1919,7 +1915,7 @@ U 1 1 5E7D649B
 P 10500 3100
 F 0 "R70" H 10625 3150 50  0000 C CNN
 F 1 "27K" H 10625 3050 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 10430 3100 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10430 3100 50  0001 C CNN
 F 3 "~" H 10500 3100 50  0001 C CNN
 	1    10500 3100
 	1    0    0    -1  
@@ -1930,7 +1926,7 @@ U 1 1 5E7D653B
 P 10000 3925
 F 0 "R67" H 10125 3975 50  0000 C CNN
 F 1 "15K" H 10125 3875 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9930 3925 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9930 3925 50  0001 C CNN
 F 3 "~" H 10000 3925 50  0001 C CNN
 	1    10000 3925
 	1    0    0    -1  
@@ -1941,7 +1937,7 @@ U 1 1 5E7D65ED
 P 10250 3925
 F 0 "R69" H 10375 3975 50  0000 C CNN
 F 1 "10K" H 10375 3875 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 10180 3925 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10180 3925 50  0001 C CNN
 F 3 "~" H 10250 3925 50  0001 C CNN
 	1    10250 3925
 	1    0    0    -1  
@@ -1952,7 +1948,7 @@ U 1 1 5E7D66A7
 P 10500 3925
 F 0 "R71" H 10625 3975 50  0000 C CNN
 F 1 "4K7" H 10625 3875 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 10430 3925 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10430 3925 50  0001 C CNN
 F 3 "~" H 10500 3925 50  0001 C CNN
 	1    10500 3925
 	1    0    0    -1  
@@ -2045,11 +2041,11 @@ Wire Wire Line
 Connection ~ 10250 4125
 Wire Wire Line
 	10250 4125 10500 4125
-Text Label 10650 3250 0    50   ~ 0
-AIN0
 Text Label 10650 3350 0    50   ~ 0
-AIN1
+AIN0
 Text Label 10650 3450 0    50   ~ 0
+AIN1
+Text Label 10650 3550 0    50   ~ 0
 AIN2
 $Comp
 L Device:R R64
@@ -2057,7 +2053,7 @@ U 1 1 5EB5FA69
 P 9750 3950
 F 0 "R64" H 9625 3875 50  0000 C CNN
 F 1 "27K" H 9625 4000 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9680 3950 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9680 3950 50  0001 C CNN
 F 3 "~" H 9750 3950 50  0001 C CNN
 	1    9750 3950
 	-1   0    0    1   
@@ -2070,7 +2066,7 @@ U 1 1 5EBEEA13
 P 9750 3400
 F 0 "R65" H 9875 3450 50  0000 C CNN
 F 1 "6K8" H 9875 3350 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 9680 3400 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9680 3400 50  0001 C CNN
 F 3 "~" H 9750 3400 50  0001 C CNN
 	1    9750 3400
 	1    0    0    -1  
@@ -2088,7 +2084,7 @@ Wire Wire Line
 Connection ~ 10000 3350
 Connection ~ 10250 3450
 Connection ~ 10500 3550
-Text Label 10650 3550 0    50   ~ 0
+Text Label 10650 3650 0    50   ~ 0
 AIN3
 Wire Wire Line
 	9750 3650 9750 3550
@@ -2393,11 +2389,6 @@ Wire Wire Line
 Connection ~ 5250 850 
 Wire Wire Line
 	5250 850  5250 800 
-Wire Wire Line
-	5400 850  5500 850 
-Wire Wire Line
-	5500 850  5500 800 
-Connection ~ 5400 850 
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5E728967
@@ -2454,19 +2445,6 @@ Wire Wire Line
 Connection ~ 3650 1550
 Wire Wire Line
 	3650 1550 3750 1550
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E8280AC
-P 5500 800
-AR Path="/5E8280AC" Ref="TP?"  Part="1" 
-AR Path="/5E0A3961/5E8280AC" Ref="TP7"  Part="1" 
-F 0 "TP7" H 5450 1000 50  0000 L CNN
-F 1 "TestPoint" H 5558 829 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 5700 800 50  0001 C CNN
-F 3 "~" H 5700 800 50  0001 C CNN
-	1    5500 800 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 800  4900 925 
 Wire Wire Line
@@ -2490,7 +2468,7 @@ U 1 1 5EB666C3
 P 800 4800
 F 0 "R101" V 725 4725 50  0000 C CNN
 F 1 "47K" V 725 4900 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 730 4800 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 730 4800 50  0001 C CNN
 F 3 "~" H 800 4800 50  0001 C CNN
 	1    800  4800
 	0    1    1    0   
@@ -2501,7 +2479,7 @@ U 1 1 5EB66BFC
 P 800 4600
 F 0 "R100" V 725 4525 50  0000 C CNN
 F 1 "47K" V 725 4700 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 730 4600 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 730 4600 50  0001 C CNN
 F 3 "~" H 800 4600 50  0001 C CNN
 	1    800  4600
 	0    1    1    0   
@@ -2512,7 +2490,7 @@ U 1 1 5EB66CA4
 P 800 4400
 F 0 "R99" V 725 4325 50  0000 C CNN
 F 1 "47K" V 725 4500 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 730 4400 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 730 4400 50  0001 C CNN
 F 3 "~" H 800 4400 50  0001 C CNN
 	1    800  4400
 	0    1    1    0   
@@ -2523,7 +2501,7 @@ U 1 1 5EB66D4A
 P 800 4200
 F 0 "R98" V 725 4125 50  0000 C CNN
 F 1 "47K" V 725 4300 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 730 4200 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 730 4200 50  0001 C CNN
 F 3 "~" H 800 4200 50  0001 C CNN
 	1    800  4200
 	0    1    1    0   
@@ -2590,7 +2568,7 @@ U 1 1 5EFB24A2
 P 2175 7400
 F 0 "R102" V 2075 7325 50  0000 C CNN
 F 1 "220R" V 2075 7550 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 2105 7400 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 2105 7400 50  0001 C CNN
 F 3 "~" H 2175 7400 50  0001 C CNN
 	1    2175 7400
 	0    1    1    0   
@@ -2636,7 +2614,7 @@ AR Path="/5F025E1C" Ref="R?"  Part="1"
 AR Path="/5E0A3961/5F025E1C" Ref="R103"  Part="1" 
 F 0 "R103" V 4850 6725 50  0000 C CNN
 F 1 "1K" V 4850 6975 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 4680 6825 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 4680 6825 50  0001 C CNN
 F 3 "~" H 4750 6825 50  0001 C CNN
 	1    4750 6825
 	0    1    1    0   
@@ -2695,7 +2673,7 @@ AR Path="/5F3BC077" Ref="R?"  Part="1"
 AR Path="/5E0A3961/5F3BC077" Ref="R104"  Part="1" 
 F 0 "R104" V 5950 6500 50  0000 C CNN
 F 1 "270R" V 5950 6750 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 5780 6600 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 5780 6600 50  0001 C CNN
 F 3 "~" H 5850 6600 50  0001 C CNN
 	1    5850 6600
 	0    1    1    0   
@@ -2708,7 +2686,7 @@ AR Path="/5F3BC2B9" Ref="R?"  Part="1"
 AR Path="/5E0A3961/5F3BC2B9" Ref="R105"  Part="1" 
 F 0 "R105" V 6450 6500 50  0000 C CNN
 F 1 "560R" V 6450 6750 50  0000 C CNN
-F 2 "Project:r-0805-hand-soldering" V 6280 6600 50  0001 C CNN
+F 2 "Project:r-1206-hand-soldering" V 6280 6600 50  0001 C CNN
 F 3 "~" H 6350 6600 50  0001 C CNN
 	1    6350 6600
 	0    1    1    0   
@@ -2884,10 +2862,10 @@ Wire Wire Line
 Wire Wire Line
 	10900 1900 10900 1850
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J25
 U 1 1 5FF59D61
 P 10850 2350
-F 0 "J?" H 10875 2050 50  0000 C CNN
+F 0 "J25" H 10875 2050 50  0000 C CNN
 F 1 "header" H 10875 2550 50  0000 C CNN
 F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 10850 2350 50  0001 C CNN
 F 3 "~" H 10850 2350 50  0001 C CNN
@@ -2899,8 +2877,8 @@ L power:GND #PWR?
 U 1 1 5FF895DD
 P 10650 2500
 AR Path="/5FF895DD" Ref="#PWR?"  Part="1" 
-AR Path="/5E0A3961/5FF895DD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10650 2250 50  0001 C CNN
+AR Path="/5E0A3961/5FF895DD" Ref="#PWR0265"  Part="1" 
+F 0 "#PWR0265" H 10650 2250 50  0001 C CNN
 F 1 "GND" H 10650 2350 50  0000 C CNN
 F 2 "" H 10650 2500 50  0001 C CNN
 F 3 "" H 10650 2500 50  0001 C CNN
@@ -2932,4 +2910,42 @@ Wire Wire Line
 	10500 2150 10500 1900
 Wire Wire Line
 	10650 2500 10650 2450
+$Comp
+L Connector_Generic:Conn_01x02 J26
+U 1 1 5E452483
+P 5750 950
+F 0 "J26" H 5775 750 50  0000 C CNN
+F 1 "header" H 5725 1050 50  0000 C CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 5750 950 50  0001 C CNN
+F 3 "~" H 5750 950 50  0001 C CNN
+	1    5750 950 
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5550 850  5400 850 
+Connection ~ 5400 850 
+Wire Wire Line
+	5550 950  5550 1225
+Wire Wire Line
+	5550 1225 5400 1225
+Connection ~ 5400 1225
+Wire Wire Line
+	5400 1225 5400 1200
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E47C985
+P 8900 1100
+AR Path="/5E47C985" Ref="TP?"  Part="1" 
+AR Path="/5E0A3961/5E47C985" Ref="TP7"  Part="1" 
+F 0 "TP7" H 8850 1300 50  0000 L CNN
+F 1 "TestPoint" H 8958 1129 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9100 1100 50  0001 C CNN
+F 3 "~" H 9100 1100 50  0001 C CNN
+	1    8900 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1200 8900 1100
+Wire Wire Line
+	8450 1200 8900 1200
 $EndSCHEMATC
