@@ -950,13 +950,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J18
 U 1 1 5E32530C
-P 9350 3900
-F 0 "J18" H 9300 4000 50  0000 L CNN
-F 1 "header" H 9250 3700 50  0000 L CNN
-F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 9350 3900 50  0001 C CNN
-F 3 "~" H 9350 3900 50  0001 C CNN
-	1    9350 3900
-	1    0    0    -1  
+P 9350 3950
+F 0 "J18" H 9300 3750 50  0000 L CNN
+F 1 "header" H 9300 4050 50  0000 L CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 9350 3950 50  0001 C CNN
+F 3 "~" H 9350 3950 50  0001 C CNN
+	1    9350 3950
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x07 J16
@@ -1092,11 +1092,9 @@ F 3 "~" H 9150 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 4100 9150 4000
+	9150 4100 9150 3950
 Wire Wire Line
 	8850 4000 8850 3650
-Wire Wire Line
-	9150 3900 9150 3650
 Wire Wire Line
 	9700 3700 9700 3650
 Wire Wire Line
@@ -1287,4 +1285,6 @@ Wire Wire Line
 Connection ~ 8350 4000
 Wire Wire Line
 	8350 4000 8450 4000
+Wire Wire Line
+	9150 3850 9150 3650
 $EndSCHEMATC
