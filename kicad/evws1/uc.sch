@@ -69,12 +69,12 @@ $EndComp
 $Comp
 L _project:atmega-isp-6 J13
 U 1 1 5E14B705
-P 6625 8950
-F 0 "J13" H 7075 9217 50  0000 C CNN
-F 1 "atmega-isp-6" H 7075 9126 50  0000 C CNN
-F 2 "Project:AVR-ISP-6" H 7075 8650 50  0001 C CIN
-F 3 "" H 6175 8600 50  0001 C CNN
-	1    6625 8950
+P 5750 7325
+F 0 "J13" H 6200 7592 50  0000 C CNN
+F 1 "atmega-isp-6" H 6200 7501 50  0000 C CNN
+F 2 "Project:AVR-ISP-6" H 6200 7025 50  0001 C CIN
+F 3 "" H 5300 6975 50  0001 C CNN
+	1    5750 7325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -387,13 +387,13 @@ Wire Wire Line
 $Comp
 L _project:dip-switch-4x2pos-smd-1.27mm SW4
 U 2 1 5E1A5559
-P 1450 2100
-F 0 "SW4" H 1450 2213 50  0000 C CNN
-F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 2214 50  0001 C CNN
-F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 2380 50  0001 C CNN
-F 3 "~" H 1450 2100 50  0001 C CNN
-	2    1450 2100
-	1    0    0    -1  
+P 1450 2475
+F 0 "SW4" H 1450 2588 50  0000 C CNN
+F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 2589 50  0001 C CNN
+F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 2755 50  0001 C CNN
+F 3 "~" H 1450 2475 50  0001 C CNN
+	2    1450 2475
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C8
@@ -409,13 +409,13 @@ $EndComp
 $Comp
 L _project:dip-switch-4x2pos-smd-1.27mm SW4
 U 1 1 5E1A5821
-P 1450 1750
-F 0 "SW4" H 1450 1863 50  0000 C CNN
-F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 1864 50  0001 C CNN
-F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 2030 50  0001 C CNN
-F 3 "~" H 1450 1750 50  0001 C CNN
-	1    1450 1750
-	1    0    0    -1  
+P 1450 2825
+F 0 "SW4" H 1450 2938 50  0000 C CNN
+F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 2939 50  0001 C CNN
+F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 3105 50  0001 C CNN
+F 3 "~" H 1450 2825 50  0001 C CNN
+	1    1450 2825
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C7
@@ -456,8 +456,8 @@ Text Label 1000 1750 0    50   ~ 0
 Text Label 1000 2100 0    50   ~ 0
 ~RESET2
 Wire Wire Line
-	6625 9150 6225 9150
-Text Label 6300 9150 0    50   ~ 0
+	5750 7525 5350 7525
+Text Label 5425 7525 0    50   ~ 0
 ~RESET
 $Comp
 L Connector_Generic:Conn_01x02 J14
@@ -604,13 +604,13 @@ $EndComp
 $Comp
 L _project:dip-switch-4x2pos-smd-1.27mm SW4
 U 4 1 5E2D8F90
-P 1450 2825
-F 0 "SW4" H 1450 2938 50  0000 C CNN
-F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 2939 50  0001 C CNN
-F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 3105 50  0001 C CNN
-F 3 "~" H 1450 2825 50  0001 C CNN
-	4    1450 2825
-	1    0    0    -1  
+P 1450 2100
+F 0 "SW4" H 1450 2213 50  0000 C CNN
+F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 2214 50  0001 C CNN
+F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 2380 50  0001 C CNN
+F 3 "~" H 1450 2100 50  0001 C CNN
+	4    1450 2100
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C10
@@ -626,13 +626,13 @@ $EndComp
 $Comp
 L _project:dip-switch-4x2pos-smd-1.27mm SW4
 U 3 1 5E2D8F9E
-P 1450 2475
-F 0 "SW4" H 1450 2588 50  0000 C CNN
-F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 2589 50  0001 C CNN
-F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 2755 50  0001 C CNN
-F 3 "~" H 1450 2475 50  0001 C CNN
-	3    1450 2475
-	1    0    0    -1  
+P 1450 1750
+F 0 "SW4" H 1450 1863 50  0000 C CNN
+F 1 "dip-switch-4x2pos-smd-1.27mm" H 1450 1864 50  0001 C CNN
+F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 1350 2030 50  0001 C CNN
+F 3 "~" H 1450 1750 50  0001 C CNN
+	3    1450 1750
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C9
@@ -1060,9 +1060,9 @@ Text Label 5675 5650 0    50   ~ 0
 Text Label 5675 5350 0    50   ~ 0
 ~RESET1
 Wire Wire Line
-	9100 4750 9550 4750
-Text Label 9325 4750 2    50   ~ 0
-CP1
+	9100 4950 9550 4950
+Text Label 9325 4950 2    50   ~ 0
+CP2
 $Comp
 L _project:PCF8591 U4
 U 1 1 5E20DDD0
@@ -1594,12 +1594,12 @@ $EndComp
 $Comp
 L Device:R R34
 U 1 1 5EF01F7D
-P 10775 4800
-F 0 "R34" H 10900 4850 50  0000 C CNN
-F 1 "22K" H 10900 4750 50  0000 C CNN
-F 2 "Project:r-1206-hand-soldering" V 10705 4800 50  0001 C CNN
-F 3 "~" H 10775 4800 50  0001 C CNN
-	1    10775 4800
+P 10775 5000
+F 0 "R34" H 10900 5050 50  0000 C CNN
+F 1 "22K" H 10900 4950 50  0000 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10705 5000 50  0001 C CNN
+F 3 "~" H 10775 5000 50  0001 C CNN
+	1    10775 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1648,56 +1648,56 @@ $EndComp
 Wire Wire Line
 	6500 2775 6500 2725
 Wire Wire Line
-	11025 4450 11025 1550
+	11025 4650 11025 1550
 Text Label 10425 1550 0    50   ~ 0
 ~RESET-PLC
 Wire Wire Line
-	11100 4550 11100 1450
+	11100 4750 11100 1450
 Wire Wire Line
 	10350 1450 11100 1450
 $Comp
 L Device:R R33
 U 1 1 5F21C580
-P 10775 4225
-F 0 "R33" H 10900 4275 50  0000 C CNN
-F 1 "22K" H 10900 4175 50  0000 C CNN
-F 2 "Project:r-1206-hand-soldering" V 10705 4225 50  0001 C CNN
-F 3 "~" H 10775 4225 50  0001 C CNN
-	1    10775 4225
+P 10775 4425
+F 0 "R33" H 10900 4475 50  0000 C CNN
+F 1 "22K" H 10900 4375 50  0000 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10705 4425 50  0001 C CNN
+F 3 "~" H 10775 4425 50  0001 C CNN
+	1    10775 4425
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10775 4375 10775 4450
+	10775 4575 10775 4650
 $Comp
 L power:+5V #PWR?
 U 1 1 5F24AD45
-P 10775 4000
+P 10775 4200
 AR Path="/5F24AD45" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5F24AD45" Ref="#PWR0167"  Part="1" 
-F 0 "#PWR0167" H 10775 3850 50  0001 C CNN
-F 1 "+5V" H 10850 4125 50  0000 C CNN
-F 2 "" H 10775 4000 50  0001 C CNN
-F 3 "" H 10775 4000 50  0001 C CNN
-	1    10775 4000
+F 0 "#PWR0167" H 10775 4050 50  0001 C CNN
+F 1 "+5V" H 10850 4325 50  0000 C CNN
+F 2 "" H 10775 4200 50  0001 C CNN
+F 3 "" H 10775 4200 50  0001 C CNN
+	1    10775 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F24AE94
-P 10775 5025
+P 10775 5225
 AR Path="/5F24AE94" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5F24AE94" Ref="#PWR0168"  Part="1" 
-F 0 "#PWR0168" H 10775 4775 50  0001 C CNN
-F 1 "GND" H 10780 4852 50  0000 C CNN
-F 2 "" H 10775 5025 50  0001 C CNN
-F 3 "" H 10775 5025 50  0001 C CNN
-	1    10775 5025
+F 0 "#PWR0168" H 10775 4975 50  0001 C CNN
+F 1 "GND" H 10780 5052 50  0000 C CNN
+F 2 "" H 10775 5225 50  0001 C CNN
+F 3 "" H 10775 5225 50  0001 C CNN
+	1    10775 5225
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10775 4950 10775 5025
+	10775 5150 10775 5225
 Wire Wire Line
-	10775 4075 10775 4000
+	10775 4275 10775 4200
 NoConn ~ 7100 3350
 NoConn ~ 7100 3450
 NoConn ~ 9100 3550
@@ -1706,15 +1706,15 @@ NoConn ~ 9100 3750
 NoConn ~ 9100 3850
 NoConn ~ 9100 3950
 NoConn ~ 9100 4050
-NoConn ~ 9100 4950
-NoConn ~ 9100 5050
 NoConn ~ 9100 5150
+NoConn ~ 9100 5250
+NoConn ~ 9100 5350
 Text Label 4400 4250 0    50   ~ 0
 PWM1
 Wire Wire Line
 	4300 5050 7100 5050
 Text Label 4375 5050 0    50   ~ 0
-AD-VC1
+AD-VC2
 Wire Wire Line
 	4300 4850 4750 4850
 Text HLabel 4750 4750 2    50   Input ~ 0
@@ -1767,94 +1767,64 @@ $EndComp
 Wire Wire Line
 	7100 5250 6575 5250
 Text HLabel 6550 4400 2    50   Output ~ 0
-CP2
+CP1
 Wire Wire Line
 	6550 4400 6325 4400
-Text HLabel 9550 4750 2    50   Output ~ 0
-CP1
-Text Label 6350 4400 0    50   ~ 0
+Text HLabel 9550 4950 2    50   Output ~ 0
 CP2
+Text Label 6350 4400 0    50   ~ 0
+CP1
 Text Label 4400 4350 0    50   ~ 0
 PWM2
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5F7788DD
-P 9400 5200
-F 0 "TP2" H 9350 5400 50  0000 L CNN
-F 1 "TestPoint" H 9458 5229 50  0001 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 9600 5200 50  0001 C CNN
-F 3 "~" H 9600 5200 50  0001 C CNN
-	1    9400 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5F7789CC
-P 9600 5200
-F 0 "TP3" H 9550 5400 50  0000 L CNN
-F 1 "TestPoint" H 9658 5229 50  0001 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 9800 5200 50  0001 C CNN
-F 3 "~" H 9800 5200 50  0001 C CNN
-	1    9600 5200
-	1    0    0    -1  
-$EndComp
+NoConn ~ 9100 5050
 Wire Wire Line
-	9400 5200 9400 5250
+	10775 4850 10775 4750
 Wire Wire Line
-	9400 5250 9100 5250
+	5750 7425 5350 7425
 Wire Wire Line
-	9600 5200 9600 5350
-Wire Wire Line
-	9600 5350 9100 5350
-NoConn ~ 9100 4850
-Wire Wire Line
-	10775 4650 10775 4550
-Wire Wire Line
-	6625 9050 6225 9050
-Wire Wire Line
-	6625 8950 6225 8950
-Text Label 6300 9050 0    50   ~ 0
-MISO
-Text Label 6300 8950 0    50   ~ 0
+	5750 7325 5350 7325
+Text Label 5425 7425 0    50   ~ 0
+SCK
+Text Label 5425 7325 0    50   ~ 0
 MISO
 Wire Wire Line
-	7525 9050 7800 9050
+	6650 7425 6925 7425
 $Comp
 L power:GND #PWR?
 U 1 1 5F9A7BA5
-P 7575 9200
+P 6700 7575
 AR Path="/5F9A7BA5" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5F9A7BA5" Ref="#PWR0171"  Part="1" 
-F 0 "#PWR0171" H 7575 8950 50  0001 C CNN
-F 1 "GND" H 7580 9027 50  0000 C CNN
-F 2 "" H 7575 9200 50  0001 C CNN
-F 3 "" H 7575 9200 50  0001 C CNN
-	1    7575 9200
+F 0 "#PWR0171" H 6700 7325 50  0001 C CNN
+F 1 "GND" H 6705 7402 50  0000 C CNN
+F 2 "" H 6700 7575 50  0001 C CNN
+F 3 "" H 6700 7575 50  0001 C CNN
+	1    6700 7575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7575 9200 7575 9150
+	6700 7575 6700 7525
 Wire Wire Line
-	7575 9150 7525 9150
-Text Label 7600 9050 0    50   ~ 0
+	6700 7525 6650 7525
+Text Label 6725 7425 0    50   ~ 0
 MOSI
 $Comp
 L power:+5V #PWR?
 U 1 1 5F9DA83D
-P 7575 8900
+P 6700 7275
 AR Path="/5F9DA83D" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5F9DA83D" Ref="#PWR0172"  Part="1" 
-F 0 "#PWR0172" H 7575 8750 50  0001 C CNN
-F 1 "+5V" H 7590 9073 50  0000 C CNN
-F 2 "" H 7575 8900 50  0001 C CNN
-F 3 "" H 7575 8900 50  0001 C CNN
-	1    7575 8900
+F 0 "#PWR0172" H 6700 7125 50  0001 C CNN
+F 1 "+5V" H 6715 7448 50  0000 C CNN
+F 2 "" H 6700 7275 50  0001 C CNN
+F 3 "" H 6700 7275 50  0001 C CNN
+	1    6700 7275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7525 8950 7575 8950
+	6650 7325 6700 7325
 Wire Wire Line
-	7575 8950 7575 8900
+	6700 7325 6700 7275
 Text Label 6475 4850 0    50   ~ 0
 ZERODET
 Text Label 6575 5250 0    50   ~ 0
@@ -1868,7 +1838,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 5350 6300 5250
 Text Label 4375 4950 0    50   ~ 0
-AD-VC2
+AD-VC1
 Text HLabel 5275 4450 0    50   Input ~ 0
 PE
 NoConn ~ 8650 5850
@@ -2008,7 +1978,7 @@ $EndComp
 Wire Wire Line
 	10000 2950 10000 2900
 Wire Wire Line
-	10250 2950 10250 2900
+	10250 2950 10250 2925
 Wire Wire Line
 	10500 2950 10500 2900
 Wire Wire Line
@@ -2071,16 +2041,14 @@ F 3 "~" H 9750 3400 50  0001 C CNN
 	1    9750 3400
 	1    0    0    -1  
 $EndComp
-Connection ~ 10775 4450
 Wire Wire Line
-	10775 4450 11025 4450
+	10775 4650 11025 4650
 Wire Wire Line
-	9100 4450 10775 4450
-Connection ~ 10775 4550
+	9100 4650 10775 4650
 Wire Wire Line
-	10775 4550 11100 4550
+	10775 4750 11100 4750
 Wire Wire Line
-	9100 4550 10775 4550
+	9100 4750 10775 4750
 Connection ~ 10000 3350
 Connection ~ 10250 3450
 Connection ~ 10500 3550
@@ -2177,7 +2145,7 @@ F3 "VCP" O L 5350 4750 50
 F4 "ZERODET" O R 6325 4750 50 
 F5 "L" I L 5350 4550 50 
 F6 "N" I L 5350 4650 50 
-F7 "CP2" O R 6325 4400 50 
+F7 "CP" O R 6325 4400 50 
 F8 "~CS-IN" I L 5350 3650 50 
 F9 "SCK-IN" I L 5350 3750 50 
 F10 "MOSI-IN" I L 5350 3850 50 
@@ -2726,24 +2694,24 @@ Wire Wire Line
 $Comp
 L _project:dip-switch-4x2pos-smd-1.27mm SW8
 U 2 1 5F5B6ED8
-P 5350 2850
-F 0 "SW8" H 5350 2950 50  0000 C CNN
-F 1 "dip-switch-4x2pos-smd-1.27mm" H 5350 2964 50  0001 C CNN
-F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 5250 3130 50  0001 C CNN
-F 3 "~" H 5350 2850 50  0001 C CNN
-	2    5350 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L _project:dip-switch-4x2pos-smd-1.27mm SW8
-U 4 1 5F5B7573
 P 5350 3350
 F 0 "SW8" H 5350 3450 50  0000 C CNN
 F 1 "dip-switch-4x2pos-smd-1.27mm" H 5350 3464 50  0001 C CNN
 F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 5250 3630 50  0001 C CNN
 F 3 "~" H 5350 3350 50  0001 C CNN
-	4    5350 3350
-	1    0    0    -1  
+	2    5350 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L _project:dip-switch-4x2pos-smd-1.27mm SW8
+U 4 1 5F5B7573
+P 5350 2850
+F 0 "SW8" H 5350 2950 50  0000 C CNN
+F 1 "dip-switch-4x2pos-smd-1.27mm" H 5350 2964 50  0001 C CNN
+F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 5250 3130 50  0001 C CNN
+F 3 "~" H 5350 2850 50  0001 C CNN
+	4    5350 2850
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10800 850  10350 850 
@@ -2756,24 +2724,24 @@ PEXP-P0
 $Comp
 L _project:dip-switch-4x2pos-smd-1.27mm SW8
 U 1 1 5F83DF4F
-P 5350 2650
-F 0 "SW8" H 5350 2763 50  0000 C CNN
-F 1 "dip-switch-4x2pos-smd-1.27mm" H 5350 2764 50  0001 C CNN
-F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 5250 2930 50  0001 C CNN
-F 3 "~" H 5350 2650 50  0001 C CNN
-	1    5350 2650
-	1    0    0    -1  
+P 5350 3150
+F 0 "SW8" H 5350 3263 50  0000 C CNN
+F 1 "dip-switch-4x2pos-smd-1.27mm" H 5350 3264 50  0001 C CNN
+F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 5250 3430 50  0001 C CNN
+F 3 "~" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	-1   0    0    -1  
 $EndComp
 $Comp
 L _project:dip-switch-4x2pos-smd-1.27mm SW8
 U 3 1 5F83E307
-P 5350 3150
-F 0 "SW8" H 5350 3250 50  0000 C CNN
-F 1 "dip-switch-4x2pos-smd-1.27mm" H 5350 3264 50  0001 C CNN
-F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 5250 3430 50  0001 C CNN
-F 3 "~" H 5350 3150 50  0001 C CNN
-	3    5350 3150
-	1    0    0    -1  
+P 5350 2650
+F 0 "SW8" H 5350 2750 50  0000 C CNN
+F 1 "dip-switch-4x2pos-smd-1.27mm" H 5350 2764 50  0001 C CNN
+F 2 "Project:dip-switch-4x2pos-smd-1.27mm" H 5250 2930 50  0001 C CNN
+F 3 "~" H 5350 2650 50  0001 C CNN
+	3    5350 2650
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	5450 2650 5500 2650
@@ -2862,27 +2830,16 @@ Wire Wire Line
 Wire Wire Line
 	10900 1900 10900 1850
 $Comp
-L Connector_Generic:Conn_01x04 J25
-U 1 1 5FF59D61
-P 10850 2350
-F 0 "J25" H 10875 2050 50  0000 C CNN
-F 1 "header" H 10875 2550 50  0000 C CNN
-F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 10850 2350 50  0001 C CNN
-F 3 "~" H 10850 2350 50  0001 C CNN
-	1    10850 2350
-	1    0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FF895DD
-P 10650 2500
+P 10700 2650
 AR Path="/5FF895DD" Ref="#PWR?"  Part="1" 
 AR Path="/5E0A3961/5FF895DD" Ref="#PWR0265"  Part="1" 
-F 0 "#PWR0265" H 10650 2250 50  0001 C CNN
-F 1 "GND" H 10650 2350 50  0000 C CNN
-F 2 "" H 10650 2500 50  0001 C CNN
-F 3 "" H 10650 2500 50  0001 C CNN
-	1    10650 2500
+F 0 "#PWR0265" H 10700 2400 50  0001 C CNN
+F 1 "GND" H 10700 2500 50  0000 C CNN
+F 2 "" H 10700 2650 50  0001 C CNN
+F 3 "" H 10700 2650 50  0001 C CNN
+	1    10700 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2900,16 +2857,7 @@ Wire Wire Line
 Connection ~ 9800 2250
 Wire Wire Line
 	4300 2450 10500 2450
-Wire Wire Line
-	10500 2450 10500 2150
 Connection ~ 10500 1900
-Wire Wire Line
-	10650 2150 10500 2150
-Connection ~ 10500 2150
-Wire Wire Line
-	10500 2150 10500 1900
-Wire Wire Line
-	10650 2500 10650 2450
 $Comp
 L Connector_Generic:Conn_01x02 J26
 U 1 1 5E452483
@@ -2948,4 +2896,69 @@ Wire Wire Line
 	8900 1200 8900 1100
 Wire Wire Line
 	8450 1200 8900 1200
+Connection ~ 10775 4650
+Connection ~ 10775 4750
+NoConn ~ 9100 4350
+NoConn ~ 9100 4450
+$Comp
+L Connector_Generic:Conn_01x04 J25
+U 1 1 5FF59D61
+P 10850 2450
+F 0 "J25" H 10875 2150 50  0000 C CNN
+F 1 "header" H 10875 2650 50  0000 C CNN
+F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 10850 2450 50  0001 C CNN
+F 3 "~" H 10850 2450 50  0001 C CNN
+	1    10850 2450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10500 1900 10500 2050
+Wire Wire Line
+	10700 2650 10650 2650
+Wire Wire Line
+	10650 2650 10650 2550
+Wire Wire Line
+	10550 2600 10600 2600
+Wire Wire Line
+	10600 2600 10600 2450
+Wire Wire Line
+	10600 2450 10650 2450
+$Comp
+L Device:R R106
+U 1 1 5E8CF761
+P 10400 2600
+F 0 "R106" V 10300 2500 50  0000 C CNN
+F 1 "0R" V 10300 2675 50  0000 C CNN
+F 2 "Project:r-1206-hand-soldering" V 10330 2600 50  0001 C CNN
+F 3 "~" H 10400 2600 50  0001 C CNN
+	1    10400 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 2925 10125 2925
+Wire Wire Line
+	10125 2925 10125 2600
+Wire Wire Line
+	10125 2600 10250 2600
+Connection ~ 10250 2925
+Wire Wire Line
+	10250 2925 10250 2900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E901354
+P 10550 2050
+AR Path="/5E901354" Ref="TP?"  Part="1" 
+AR Path="/5E0A3961/5E901354" Ref="TP3"  Part="1" 
+F 0 "TP3" V 10550 2225 50  0000 L CNN
+F 1 "TestPoint" H 10608 2079 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 10750 2050 50  0001 C CNN
+F 3 "~" H 10750 2050 50  0001 C CNN
+	1    10550 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 2050 10500 2050
+Connection ~ 10500 2050
+Wire Wire Line
+	10500 2050 10500 2450
 $EndSCHEMATC

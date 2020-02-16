@@ -280,10 +280,10 @@ F 3 "" H 7450 3000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R93
 U 1 1 5E1A9D87
 P 3250 3200
-F 0 "R5" V 3043 3200 50  0000 C CNN
+F 0 "R93" V 3043 3200 50  0000 C CNN
 F 1 "390K" V 3134 3200 50  0000 C CNN
 F 2 "Project:r-1206-hand-soldering" V 3180 3200 50  0001 C CNN
 F 3 "~" H 3250 3200 50  0001 C CNN
@@ -291,10 +291,10 @@ F 3 "~" H 3250 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R90
 U 1 1 5E1A9E53
 P 3000 3450
-F 0 "R4" H 3150 3500 50  0000 C CNN
+F 0 "R90" H 3150 3500 50  0000 C CNN
 F 1 "390K" H 3200 3400 50  0000 C CNN
 F 2 "Project:r-1206-hand-soldering" V 2930 3450 50  0001 C CNN
 F 3 "~" H 3000 3450 50  0001 C CNN
@@ -871,20 +871,20 @@ GND
 Wire Wire Line
 	6150 6450 6650 6450
 Wire Wire Line
-	4850 5250 5150 5250
+	4625 5250 5150 5250
 Text Label 6200 6350 0    50   ~ 0
 MODBUS-A
 Text Label 6200 6450 0    50   ~ 0
 MODBUS-B
-Text Label 4900 5250 0    50   ~ 0
+Text Label 4625 5250 0    50   ~ 0
 CP2
 Wire Wire Line
 	9750 3600 9475 3600
 Text Label 9625 3600 0    50   ~ 0
 CP1
 Wire Wire Line
-	6150 5250 6450 5250
-Text Label 6200 5250 0    50   ~ 0
+	6150 5250 6750 5250
+Text Label 6750 5250 2    50   ~ 0
 CP1
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -1073,11 +1073,11 @@ F 3 "~" H 7025 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6075 4100 6400 4100
+	6075 4100 6300 4100
 Wire Wire Line
-	6400 4100 6400 4800
+	6300 4100 6300 4800
 Wire Wire Line
-	6400 4800 6150 4800
+	6300 4800 6150 4800
 Wire Wire Line
 	6075 4000 6450 4000
 Wire Wire Line
@@ -1521,10 +1521,10 @@ Wire Wire Line
 Text Label 9750 3400 2    50   ~ 0
 ~EV1ON
 $Comp
-L Connector:TestPoint TP4
+L Connector:TestPoint TP2
 U 1 1 5EC3C43D
 P 9500 3250
-F 0 "TP4" H 9450 3450 50  0000 L CNN
+F 0 "TP2" H 9450 3450 50  0000 L CNN
 F 1 "TestPoint" H 9558 3279 50  0001 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9700 3250 50  0001 C CNN
 F 3 "~" H 9700 3250 50  0001 C CNN
@@ -2016,4 +2016,82 @@ Wire Wire Line
 	7050 2800 6075 2800
 Wire Wire Line
 	7050 3200 6075 3200
+$Comp
+L Connector_Generic:Conn_01x04 J21
+U 1 1 5E422024
+P 6950 5250
+F 0 "J21" H 6950 4950 50  0000 C CNN
+F 1 "header" H 6925 5450 50  0000 C CNN
+F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 6950 5250 50  0001 C CNN
+F 3 "~" H 6950 5250 50  0001 C CNN
+	1    6950 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0258
+U 1 1 5E43948B
+P 6675 5400
+F 0 "#PWR0258" H 6675 5150 50  0001 C CNN
+F 1 "GND" H 6680 5227 50  0000 C CNN
+F 2 "" H 6675 5400 50  0001 C CNN
+F 3 "" H 6675 5400 50  0001 C CNN
+	1    6675 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5350 6675 5350
+Wire Wire Line
+	6675 5350 6675 5400
+Connection ~ 6300 4800
+$Comp
+L Connector_Generic:Conn_01x04 J22
+U 1 1 5E4E08A3
+P 4425 5250
+F 0 "J22" H 4425 4950 50  0000 C CNN
+F 1 "header" H 4400 5450 50  0000 C CNN
+F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 4425 5250 50  0001 C CNN
+F 3 "~" H 4425 5250 50  0001 C CNN
+	1    4425 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0259
+U 1 1 5E50FCB6
+P 4700 5400
+F 0 "#PWR0259" H 4700 5150 50  0001 C CNN
+F 1 "GND" H 4705 5227 50  0000 C CNN
+F 2 "" H 4700 5400 50  0001 C CNN
+F 3 "" H 4700 5400 50  0001 C CNN
+	1    4700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 5350 4700 5350
+Wire Wire Line
+	4700 5350 4700 5400
+Wire Wire Line
+	4625 5050 4900 5050
+Connection ~ 4900 5050
+Wire Wire Line
+	4950 4950 4950 5150
+Wire Wire Line
+	4625 5150 4950 5150
+Connection ~ 4950 4950
+Wire Wire Line
+	6300 5150 6750 5150
+Wire Wire Line
+	6300 4800 6300 5150
+Wire Wire Line
+	6750 5050 6450 5050
+Wire Wire Line
+	6450 5050 6450 4900
+Connection ~ 6450 4900
+Text Label 4625 5150 0    50   ~ 0
+AD-I2
+Text Label 4625 5050 0    50   ~ 0
+AD-V2
+Text Label 6750 5150 2    50   ~ 0
+AD-I1
+Text Label 6750 5050 2    50   ~ 0
+AD-V1
 $EndSCHEMATC
