@@ -18,6 +18,10 @@ $CMP ACS712-30
 D Current Sensor ACS712, VCC 5V, 30A
 $ENDCMP
 #
+$CMP AD633AR
+D AD633 4-quadrant analog multiplier
+$ENDCMP
+#
 $CMP AO3400
 D n-mosfet, 30V, 3A
 $ENDCMP

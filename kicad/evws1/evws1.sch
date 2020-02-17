@@ -741,6 +741,8 @@ F10 "AD-V2" O L 5275 4000 50
 F11 "AD-I2" O L 5275 4100 50 
 F12 "VREF-2V5" I L 5275 4300 50 
 F13 "VREF+2V5" I L 5275 4200 50 
+F14 "AOUT" I R 6075 4300 50 
+F15 "E1" O R 6075 4200 50 
 $EndSheet
 Wire Wire Line
 	7150 3850 6075 3850
@@ -1073,17 +1075,17 @@ F 3 "~" H 7025 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6075 4100 6300 4100
+	6075 4100 6400 4100
 Wire Wire Line
-	6300 4100 6300 4800
+	6400 4100 6400 4950
 Wire Wire Line
-	6300 4800 6150 4800
+	6400 4950 6150 4950
 Wire Wire Line
 	6075 4000 6450 4000
 Wire Wire Line
-	6450 4000 6450 4900
+	6450 4000 6450 5050
 Wire Wire Line
-	6450 4900 6150 4900
+	6450 5050 6150 5050
 Wire Wire Line
 	5275 4100 4950 4100
 Wire Wire Line
@@ -1162,45 +1164,32 @@ Text Label 9550 2900 0    50   ~ 0
 GND
 Wire Wire Line
 	1500 3050 1875 3050
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5E186730
-P 1800 2900
-F 0 "TP1" H 1750 3100 50  0000 L CNN
-F 1 "TestPoint" H 1858 2929 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2000 2900 50  0001 C CNN
-F 3 "~" H 2000 2900 50  0001 C CNN
-	1    1800 2900
-	1    0    0    -1  
-$EndComp
 NoConn ~ 10075 1025
 NoConn ~ 10275 1025
 NoConn ~ 10475 1025
 NoConn ~ 10675 1025
 NoConn ~ 10875 1025
-Wire Wire Line
-	1800 2900 1800 2950
 $Comp
 L Connector:Screw_Terminal_01x02 J7
 U 1 1 5E1318E9
-P 1350 4700
-F 0 "J7" H 1350 4500 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1270 4466 50  0001 C CNN
-F 2 "Project:Terminalblock-5mm-2P" H 1350 4700 50  0001 C CNN
-F 3 "~" H 1350 4700 50  0001 C CNN
-	1    1350 4700
-	-1   0    0    1   
+P 1350 4600
+F 0 "J7" H 1350 4700 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1270 4366 50  0001 C CNN
+F 2 "Project:Terminalblock-5mm-2P" H 1350 4600 50  0001 C CNN
+F 3 "~" H 1350 4600 50  0001 C CNN
+	1    1350 4600
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5E1322CC
-P 9925 4600
-F 0 "J2" H 9925 4700 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 9845 4366 50  0001 C CNN
-F 2 "Project:Terminalblock-5mm-2P" H 9925 4600 50  0001 C CNN
-F 3 "~" H 9925 4600 50  0001 C CNN
-	1    9925 4600
-	1    0    0    -1  
+P 9925 4700
+F 0 "J2" H 9925 4500 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 9845 4466 50  0001 C CNN
+F 2 "Project:Terminalblock-5mm-2P" H 9925 4700 50  0001 C CNN
+F 3 "~" H 9925 4700 50  0001 C CNN
+	1    9925 4700
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4200 1150 4200 1350
@@ -1339,8 +1328,8 @@ F0 "Microcontroller" 50
 F1 "uc.sch" 50
 F2 "CP2" O L 5150 5250 50 
 F3 "CP1" O R 6150 5250 50 
-F4 "AD-I1" I R 6150 4800 50 
-F5 "AD-V1" I R 6150 4900 50 
+F4 "AD-I1" I R 6150 4950 50 
+F5 "AD-V1" I R 6150 5050 50 
 F6 "AD-I2" I L 5150 4950 50 
 F7 "AD-V2" I L 5150 5050 50 
 F8 "PE" I R 6150 6900 50 
@@ -1356,6 +1345,8 @@ F17 "VREF+2V5" O L 5150 4800 50
 F18 "VREF-2V5" O L 5150 4700 50 
 F19 "EV1X" I L 5150 6700 50 
 F20 "EV2X" I L 5150 6800 50 
+F21 "AOUT" O R 6150 4725 50 
+F22 "VE1" I R 6150 4800 50 
 $EndSheet
 Wire Wire Line
 	6650 6700 6150 6700
@@ -1516,21 +1507,8 @@ Wire Wire Line
 Connection ~ 8700 3500
 Wire Wire Line
 	8700 3500 8700 3600
-Wire Wire Line
-	9500 3250 9500 3300
 Text Label 9750 3400 2    50   ~ 0
 ~EV1ON
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5EC3C43D
-P 9500 3250
-F 0 "TP2" H 9450 3450 50  0000 L CNN
-F 1 "TestPoint" H 9558 3279 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9700 3250 50  0001 C CNN
-F 3 "~" H 9700 3250 50  0001 C CNN
-	1    9500 3250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R62
 U 1 1 5EC3CE9E
@@ -1777,9 +1755,9 @@ Wire Wire Line
 	1500 2950 1800 2950
 Text Label 9750 3300 2    50   ~ 0
 EV1TP
-Text Label 2650 6700 0    50   ~ 0
+Text Label 1875 6700 0    50   ~ 0
 EV1TP
-Text Label 2650 6900 0    50   ~ 0
+Text Label 1875 6900 0    50   ~ 0
 EV2TP
 $Comp
 L Device:R R96
@@ -1962,9 +1940,9 @@ Connection ~ 4600 7300
 Wire Wire Line
 	4600 7300 4700 7300
 Wire Wire Line
-	2950 6700 2600 6700
+	2950 6700 2300 6700
 Wire Wire Line
-	2950 6900 2600 6900
+	2950 6900 2700 6900
 Text Label 4825 6800 0    50   ~ 0
 EV2X
 Text Label 4825 6700 0    50   ~ 0
@@ -2042,7 +2020,7 @@ Wire Wire Line
 	6750 5350 6675 5350
 Wire Wire Line
 	6675 5350 6675 5400
-Connection ~ 6300 4800
+Connection ~ 6400 4950
 $Comp
 L Connector_Generic:Conn_01x04 J22
 U 1 1 5E4E08A3
@@ -2078,14 +2056,12 @@ Wire Wire Line
 	4625 5150 4950 5150
 Connection ~ 4950 4950
 Wire Wire Line
-	6300 5150 6750 5150
+	6400 5150 6750 5150
 Wire Wire Line
-	6300 4800 6300 5150
+	6400 4950 6400 5150
 Wire Wire Line
 	6750 5050 6450 5050
-Wire Wire Line
-	6450 5050 6450 4900
-Connection ~ 6450 4900
+Connection ~ 6450 5050
 Text Label 4625 5150 0    50   ~ 0
 AD-I2
 Text Label 4625 5050 0    50   ~ 0
@@ -2094,4 +2070,78 @@ Text Label 6750 5150 2    50   ~ 0
 AD-I1
 Text Label 6750 5050 2    50   ~ 0
 AD-V1
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5ED2AD37
+P 2200 6150
+AR Path="/5E0A3961/5E20BE9A/5ED2AD37" Ref="J?"  Part="1" 
+AR Path="/5ED2AD37" Ref="J27"  Part="1" 
+F 0 "J27" V 2200 6225 50  0000 L CNN
+F 1 "header" V 2300 5975 50  0000 L CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 2200 6150 50  0001 C CNN
+F 3 "~" H 2200 6150 50  0001 C CNN
+	1    2200 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5ED434D8
+P 2600 6150
+AR Path="/5E0A3961/5E20BE9A/5ED434D8" Ref="J?"  Part="1" 
+AR Path="/5ED434D8" Ref="J28"  Part="1" 
+F 0 "J28" V 2600 5850 50  0000 L CNN
+F 1 "header" V 2700 5975 50  0000 L CNN
+F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 2600 6150 50  0001 C CNN
+F 3 "~" H 2600 6150 50  0001 C CNN
+	1    2600 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0239
+U 1 1 5ED73D30
+P 2200 6400
+F 0 "#PWR0239" H 2200 6150 50  0001 C CNN
+F 1 "GND" H 2200 6250 50  0000 C CNN
+F 2 "" H 2200 6400 50  0001 C CNN
+F 3 "" H 2200 6400 50  0001 C CNN
+	1    2200 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0245
+U 1 1 5ED74081
+P 2600 6400
+F 0 "#PWR0245" H 2600 6150 50  0001 C CNN
+F 1 "GND" H 2600 6250 50  0000 C CNN
+F 2 "" H 2600 6400 50  0001 C CNN
+F 3 "" H 2600 6400 50  0001 C CNN
+	1    2600 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6400 2200 6350
+Wire Wire Line
+	2600 6400 2600 6350
+Wire Wire Line
+	2700 6350 2700 6900
+Connection ~ 2700 6900
+Wire Wire Line
+	1825 6900 2700 6900
+Wire Wire Line
+	2300 6350 2300 6700
+Connection ~ 2300 6700
+Wire Wire Line
+	2300 6700 1825 6700
+Wire Wire Line
+	6150 4725 6225 4725
+Wire Wire Line
+	6225 4725 6225 4300
+Wire Wire Line
+	6225 4300 6075 4300
+Wire Wire Line
+	6150 4800 6275 4800
+Wire Wire Line
+	6275 4800 6275 4200
+Wire Wire Line
+	6275 4200 6075 4200
 $EndSCHEMATC
