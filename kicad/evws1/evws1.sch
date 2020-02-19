@@ -124,7 +124,7 @@ F 1 "Screw_Terminal_01x03" H 1780 1101 50  0001 L CNN
 F 2 "Project:Terminalblock-5mm-3P" H 1700 1150 50  0001 C CNN
 F 3 "~" H 1700 1150 50  0001 C CNN
 	1    1700 1150
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L _project:PE #PWR0107
@@ -355,8 +355,6 @@ $EndComp
 Text Label 3000 1250 0    50   ~ 0
 PE
 Wire Wire Line
-	1900 1250 2400 1250
-Wire Wire Line
 	3150 1250 3150 1350
 Wire Wire Line
 	3150 1350 3550 1350
@@ -370,23 +368,9 @@ Wire Wire Line
 Connection ~ 3550 1350
 Wire Wire Line
 	3550 1350 3750 1350
-Wire Wire Line
-	1900 1050 2000 1050
-Wire Wire Line
-	2350 1050 2350 900 
-Connection ~ 2350 1050
-Wire Wire Line
-	3200 1150 2750 1150
-Wire Wire Line
-	2350 1050 3200 1050
-Wire Wire Line
-	2750 900  2750 1150
-Connection ~ 2750 1150
-Wire Wire Line
-	2750 1150 2000 1150
-Text Label 2850 1050 0    50   ~ 0
+Text Label 2875 1150 0    50   ~ 0
 230V-L
-Text Label 2850 1150 0    50   ~ 0
+Text Label 2875 1050 0    50   ~ 0
 230V-N
 Text Label 1650 3800 0    50   ~ 0
 N-EV2
@@ -420,12 +404,12 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H8
 U 1 1 5E120BAD
-P 10075 925
-F 0 "H8" H 10025 1125 50  0000 L CNN
-F 1 "MountingHole_Pad" H 10175 885 50  0001 L CNN
-F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 10075 925 50  0001 C CNN
-F 3 "~" H 10075 925 50  0001 C CNN
-	1    10075 925 
+P 9975 925
+F 0 "H8" H 9925 1125 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10075 885 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 9975 925 50  0001 C CNN
+F 3 "~" H 9975 925 50  0001 C CNN
+	1    9975 925 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -593,8 +577,6 @@ Wire Wire Line
 	3100 3200 3000 3200
 Wire Wire Line
 	3000 3200 3000 3300
-Wire Wire Line
-	8150 3900 8250 3900
 $Comp
 L power:+5V #PWR0113
 U 1 1 5E2A12D7
@@ -914,12 +896,8 @@ Wire Wire Line
 	2000 1150 2000 1350
 Connection ~ 2000 1150
 Wire Wire Line
-	2000 1150 1900 1150
-Wire Wire Line
 	2000 1050 2000 950 
 Connection ~ 2000 1050
-Wire Wire Line
-	2000 1050 2350 1050
 $Comp
 L power:+5V #PWR0123
 U 1 1 5E7BB659
@@ -1164,7 +1142,6 @@ Text Label 9550 2900 0    50   ~ 0
 GND
 Wire Wire Line
 	1500 3050 1875 3050
-NoConn ~ 10075 1025
 NoConn ~ 10275 1025
 NoConn ~ 10475 1025
 NoConn ~ 10675 1025
@@ -1974,14 +1951,9 @@ PE\nN-EV1\nN-K1
 Text Notes 10025 4725 0    50   ~ 0
 K1-A1\nK1-A2
 Wire Wire Line
-	8150 4000 9675 4000
+	8150 4000 8250 4000
 Wire Wire Line
 	7850 3200 8250 3200
-Wire Wire Line
-	8250 3200 8250 3900
-Connection ~ 8250 3900
-Wire Wire Line
-	8250 3900 9675 3900
 Wire Wire Line
 	7850 2800 7950 2800
 Wire Wire Line
@@ -2144,4 +2116,36 @@ Wire Wire Line
 	6275 4800 6275 4200
 Wire Wire Line
 	6275 4200 6075 4200
+Wire Wire Line
+	8150 3900 9675 3900
+Wire Wire Line
+	8250 3200 8250 4000
+Connection ~ 8250 4000
+Wire Wire Line
+	8250 4000 9675 4000
+Wire Wire Line
+	9925 1125 9975 1125
+Wire Wire Line
+	9975 1125 9975 1025
+Connection ~ 9925 1125
+Wire Wire Line
+	1900 1150 2000 1150
+Wire Wire Line
+	1900 1050 2000 1050
+Wire Wire Line
+	2000 1050 2750 1050
+Wire Wire Line
+	2350 900  2350 1150
+Connection ~ 2350 1150
+Wire Wire Line
+	2350 1150 2000 1150
+Wire Wire Line
+	2350 1150 3200 1150
+Wire Wire Line
+	2750 900  2750 1050
+Connection ~ 2750 1050
+Wire Wire Line
+	2750 1050 3200 1050
+Wire Wire Line
+	1900 1250 2400 1250
 $EndSCHEMATC

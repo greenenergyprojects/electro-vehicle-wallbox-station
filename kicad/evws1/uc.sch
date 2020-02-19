@@ -451,9 +451,9 @@ Wire Wire Line
 	1350 1750 975  1750
 Wire Wire Line
 	1350 2100 975  2100
-Text Label 1000 1750 0    50   ~ 0
+Text Label 1025 2100 0    50   ~ 0
 ~RESET1
-Text Label 1000 2100 0    50   ~ 0
+Text Label 1025 1750 0    50   ~ 0
 ~RESET2
 Wire Wire Line
 	5750 7525 5350 7525
@@ -1401,17 +1401,6 @@ F 3 "~" H 8675 1575 50  0001 C CNN
 $EndComp
 Text Label 8475 1400 0    50   ~ 0
 VREF
-$Comp
-L power:GNDA #PWR0160
-U 1 1 5E758D7C
-P 8675 1875
-F 0 "#PWR0160" H 8675 1625 50  0001 C CNN
-F 1 "GNDA" H 8680 1702 50  0000 C CNN
-F 2 "" H 8675 1875 50  0001 C CNN
-F 3 "" H 8675 1875 50  0001 C CNN
-	1    8675 1875
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8450 1800 8675 1800
 Wire Wire Line
@@ -1986,17 +1975,11 @@ Wire Wire Line
 Wire Wire Line
 	10250 3450 10850 3450
 Wire Wire Line
-	10500 3550 10850 3550
-Wire Wire Line
 	10000 3350 10000 3250
 Wire Wire Line
 	10250 3775 10250 3450
 Wire Wire Line
 	10250 3450 10250 3250
-Wire Wire Line
-	10500 3775 10500 3550
-Wire Wire Line
-	10500 3550 10500 3250
 Wire Wire Line
 	10000 4075 10000 4125
 Wire Wire Line
@@ -2033,12 +2016,12 @@ Wire Wire Line
 $Comp
 L Device:R R65
 U 1 1 5EBEEA13
-P 9750 3400
-F 0 "R65" H 9875 3450 50  0000 C CNN
-F 1 "6K8" H 9875 3350 50  0000 C CNN
-F 2 "Project:r-1206-hand-soldering" V 9680 3400 50  0001 C CNN
-F 3 "~" H 9750 3400 50  0001 C CNN
-	1    9750 3400
+P 9750 3350
+F 0 "R65" H 9875 3400 50  0000 C CNN
+F 1 "6K8" H 9875 3300 50  0000 C CNN
+F 2 "Project:r-1206-hand-soldering" V 9680 3350 50  0001 C CNN
+F 3 "~" H 9750 3350 50  0001 C CNN
+	1    9750 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2051,15 +2034,10 @@ Wire Wire Line
 	9100 4750 10775 4750
 Connection ~ 10000 3350
 Connection ~ 10250 3450
-Connection ~ 10500 3550
 Text Label 10650 3650 0    50   ~ 0
 AIN3
 Wire Wire Line
-	9750 3650 9750 3550
-Wire Wire Line
-	9750 3650 10850 3650
-Wire Wire Line
-	9750 3250 9750 3150
+	9750 3200 9750 3150
 $Comp
 L power:+5V #PWR?
 U 1 1 5ED9D519
@@ -2170,9 +2148,6 @@ Wire Wire Line
 	6325 4250 7100 4250
 Wire Wire Line
 	5350 4450 5275 4450
-Wire Wire Line
-	9750 3800 9750 3650
-Connection ~ 9750 3650
 Wire Wire Line
 	9100 2850 9150 2850
 Wire Wire Line
@@ -2973,4 +2948,31 @@ Wire Wire Line
 	4650 6300 4500 6300
 Wire Wire Line
 	4500 6300 4500 6350
+$Comp
+L power:GND #PWR?
+U 1 1 5F85ACEA
+P 8675 1875
+AR Path="/5F85ACEA" Ref="#PWR?"  Part="1" 
+AR Path="/5E0A3961/5F85ACEA" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 8675 1625 50  0001 C CNN
+F 1 "GND" H 8680 1702 50  0000 C CNN
+F 2 "" H 8675 1875 50  0001 C CNN
+F 3 "" H 8675 1875 50  0001 C CNN
+	1    8675 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 3500 9750 3550
+Wire Wire Line
+	10500 3250 10500 3650
+Wire Wire Line
+	10850 3550 9750 3550
+Connection ~ 9750 3550
+Wire Wire Line
+	9750 3550 9750 3800
+Wire Wire Line
+	10850 3650 10500 3650
+Connection ~ 10500 3650
+Wire Wire Line
+	10500 3650 10500 3775
 $EndSCHEMATC

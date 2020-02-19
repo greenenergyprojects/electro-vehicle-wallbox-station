@@ -35,7 +35,7 @@ F 1 "1K" H 5630 3955 50  0000 R CNN
 F 2 "Project:trimmer-tht-3296" H 5700 4000 50  0001 C CNN
 F 3 "~" H 5700 4000 50  0001 C CNN
 	1    5700 4000
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?

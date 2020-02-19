@@ -985,28 +985,28 @@ Wire Wire Line
 Wire Wire Line
 	8200 1900 8200 2000
 Wire Wire Line
-	8300 1800 7800 1800
+	8300 1400 7800 1400
 Wire Wire Line
-	8300 1700 7800 1700
+	8300 1300 7800 1300
 Wire Wire Line
 	8300 1600 7800 1600
 Wire Wire Line
 	8300 1500 7800 1500
 Wire Wire Line
-	8300 1400 7800 1400
+	8300 1800 7800 1800
 Wire Wire Line
-	8300 1300 7800 1300
+	8300 1700 7800 1700
 Text Label 6600 4100 0    50   ~ 0
 ~RE1
 Text Label 6600 4200 0    50   ~ 0
 DE1
-Text Label 7900 1800 0    50   ~ 0
-DE1
-Text Label 7900 1700 0    50   ~ 0
-~RE1
 Text Label 7900 1400 0    50   ~ 0
-UC-TXD0
+DE1
 Text Label 7900 1300 0    50   ~ 0
+~RE1
+Text Label 7900 1800 0    50   ~ 0
+UC-TXD0
+Text Label 7900 1700 0    50   ~ 0
 UC-RXD0
 Text Label 7900 1500 0    50   ~ 0
 UC-RXD1
