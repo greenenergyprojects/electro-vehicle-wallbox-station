@@ -124,39 +124,6 @@ F 3 "" H 4500 1175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
-U 1 1 5E2A2D0C
-P 4250 1425
-AR Path="/5E0A3961/5E2A2D0C" Ref="C?"  Part="1" 
-AR Path="/5E0A3961/5E20BE9A/5E2A2D0C" Ref="C37"  Part="1" 
-F 0 "C37" H 4350 1350 50  0000 C CNN
-F 1 "100n" H 4375 1500 50  0000 C CNN
-F 2 "Project:c-1206-hand-soldering" H 4250 1425 50  0001 C CNN
-F 3 "~" H 4250 1425 50  0001 C CNN
-	1    4250 1425
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4500 1325 4500 1275
-Wire Wire Line
-	4500 1275 4250 1275
-Wire Wire Line
-	4250 1275 4250 1325
-Connection ~ 4500 1275
-Wire Wire Line
-	4500 1275 4500 1175
-$Comp
-L power:GND #PWR0211
-U 1 1 5E2A2EB7
-P 4250 1575
-F 0 "#PWR0211" H 4250 1325 50  0001 C CNN
-F 1 "GND" H 4255 1402 50  0000 C CNN
-F 2 "" H 4250 1575 50  0001 C CNN
-F 3 "" H 4250 1575 50  0001 C CNN
-	1    4250 1575
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0212
 U 1 1 5E2A2FB6
 P 5600 2425
@@ -176,8 +143,6 @@ Wire Wire Line
 Connection ~ 5600 2375
 Wire Wire Line
 	5600 2375 5600 2425
-Wire Wire Line
-	4250 1525 4250 1575
 Wire Wire Line
 	4600 1700 4500 1700
 Wire Wire Line
@@ -1287,4 +1252,6 @@ Wire Wire Line
 	8350 4000 8450 4000
 Wire Wire Line
 	9150 3850 9150 3650
+Wire Wire Line
+	4500 1175 4500 1325
 $EndSCHEMATC
