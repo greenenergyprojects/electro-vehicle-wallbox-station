@@ -189,8 +189,8 @@ L Device:C_Small C?
 U 1 1 5E2A54FC
 P 3300 1250
 AR Path="/5E0A3961/5E2A54FC" Ref="C?"  Part="1" 
-AR Path="/5E0A3961/5E20BE9A/5E2A54FC" Ref="C35"  Part="1" 
-F 0 "C35" V 3425 1250 50  0000 C CNN
+AR Path="/5E0A3961/5E20BE9A/5E2A54FC" Ref="C5"  Part="1" 
+F 0 "C5" V 3425 1250 50  0000 C CNN
 F 1 "100n" V 3175 1250 50  0000 C CNN
 F 2 "Project:c-1206-hand-soldering" H 3300 1250 50  0001 C CNN
 F 3 "~" H 3300 1250 50  0001 C CNN
@@ -590,8 +590,8 @@ L Device:C_Small C?
 U 1 1 5E2AEE23
 P 2200 6675
 AR Path="/5E0A3961/5E2AEE23" Ref="C?"  Part="1" 
-AR Path="/5E0A3961/5E20BE9A/5E2AEE23" Ref="C30"  Part="1" 
-F 0 "C30" H 2300 6600 50  0000 C CNN
+AR Path="/5E0A3961/5E20BE9A/5E2AEE23" Ref="C4"  Part="1" 
+F 0 "C4" H 2300 6600 50  0000 C CNN
 F 1 "22p" H 2325 6750 50  0000 C CNN
 F 2 "Project:c-1206-hand-soldering" H 2200 6675 50  0001 C CNN
 F 3 "~" H 2200 6675 50  0001 C CNN
@@ -645,10 +645,10 @@ Wire Wire Line
 Wire Wire Line
 	2500 5825 2850 5825
 $Comp
-L Connector_Generic:Conn_01x03 J15
+L Connector_Generic:Conn_01x03 JP5
 U 1 1 5E2CA290
 P 1825 5400
-F 0 "J15" H 1905 5442 50  0000 L CNN
+F 0 "JP5" H 1905 5442 50  0000 L CNN
 F 1 "Jumper" H 1905 5351 50  0000 L CNN
 F 2 "Project:idc-header-1x03-p2.54mm-vertical" H 1825 5400 50  0001 C CNN
 F 3 "~" H 1825 5400 50  0001 C CNN
@@ -880,10 +880,10 @@ UC-RXD1
 Text Label 1175 5825 0    50   ~ 0
 UC-TXD1
 $Comp
-L Connector_Generic:Conn_01x03 J17
+L Connector_Generic:Conn_01x03 T3
 U 1 1 5E324F71
 P 8250 3050
-F 0 "J17" V 8350 3200 50  0000 R CNN
+F 0 "T3" V 8350 3200 50  0000 R CNN
 F 1 "header" V 8350 2975 50  0000 R CNN
 F 2 "Project:idc-header-1x03-p2.54mm-vertical" H 8250 3050 50  0001 C CNN
 F 3 "~" H 8250 3050 50  0001 C CNN
@@ -891,10 +891,10 @@ F 3 "~" H 8250 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J20
+L Connector_Generic:Conn_01x02 JP8
 U 1 1 5E3251CE
 P 9700 3250
-F 0 "J20" H 9675 3350 50  0000 L CNN
+F 0 "JP8" H 9675 3350 50  0000 L CNN
 F 1 "header" H 9650 3050 50  0000 L CNN
 F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 9700 3250 50  0001 C CNN
 F 3 "~" H 9700 3250 50  0001 C CNN
@@ -902,10 +902,10 @@ F 3 "~" H 9700 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J19
+L Connector_Generic:Conn_01x02 JP7
 U 1 1 5E32525A
 P 9700 4800
-F 0 "J19" H 9650 4900 50  0000 L CNN
+F 0 "JP7" H 9650 4900 50  0000 L CNN
 F 1 "header" H 9600 4600 50  0000 L CNN
 F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 9700 4800 50  0001 C CNN
 F 3 "~" H 9700 4800 50  0001 C CNN
@@ -913,10 +913,10 @@ F 3 "~" H 9700 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J18
+L Connector_Generic:Conn_01x02 JP6
 U 1 1 5E32530C
 P 9350 3950
-F 0 "J18" H 9300 3750 50  0000 L CNN
+F 0 "JP6" H 9300 3750 50  0000 L CNN
 F 1 "header" H 9300 4050 50  0000 L CNN
 F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 9350 3950 50  0001 C CNN
 F 3 "~" H 9350 3950 50  0001 C CNN
@@ -924,10 +924,10 @@ F 3 "~" H 9350 3950 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x07 J16
+L Connector_Generic:Conn_01x07 T1
 U 1 1 5E32575F
 P 8500 1600
-F 0 "J16" H 8500 1200 50  0000 C CNN
+F 0 "T1" H 8500 1200 50  0000 C CNN
 F 1 "header" H 8525 2025 50  0000 C CNN
 F 2 "Project:idc-header-1x07-p2.54mm-vertical" H 8500 1600 50  0001 C CNN
 F 3 "~" H 8500 1600 50  0001 C CNN

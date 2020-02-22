@@ -2567,10 +2567,10 @@ Wire Wire Line
 Wire Wire Line
 	4350 7550 4350 7600
 $Comp
-L Connector_Generic:Conn_01x02 J23
+L Connector_Generic:Conn_01x02 T5
 U 1 1 5F15C743
 P 4900 7350
-F 0 "J23" H 4925 7150 50  0000 C CNN
+F 0 "T5" H 4925 7150 50  0000 C CNN
 F 1 "header" H 4925 7450 50  0000 C CNN
 F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 4900 7350 50  0001 C CNN
 F 3 "~" H 4900 7350 50  0001 C CNN
@@ -2846,10 +2846,10 @@ Connection ~ 10775 4750
 NoConn ~ 9100 4350
 NoConn ~ 9100 4450
 $Comp
-L Connector_Generic:Conn_01x04 J25
+L Connector_Generic:Conn_01x04 J15
 U 1 1 5FF59D61
 P 10850 2450
-F 0 "J25" H 10875 2150 50  0000 C CNN
+F 0 "J15" H 10875 2150 50  0000 C CNN
 F 1 "header" H 10875 2650 50  0000 C CNN
 F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 10850 2450 50  0001 C CNN
 F 3 "~" H 10850 2450 50  0001 C CNN
