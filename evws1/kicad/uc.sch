@@ -89,10 +89,10 @@ F 3 "" H 3300 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L _project:rpi-ev-plc-adapter-v1.0 M5
+L _project:rpi-ev-plc-adapter-v1.0 M4
 U 1 1 5E152A84
 P 8100 4600
-F 0 "M5" H 7325 6500 50  0000 C CNN
+F 0 "M4" H 7325 6500 50  0000 C CNN
 F 1 "rpi-ev-plc-adapter-v1.0" H 8450 6525 50  0000 C CNN
 F 2 "Project:rpi-ev-plc-adapter-v1.0" H 8100 4650 50  0001 C CIN
 F 3 "" H 8100 4650 50  0001 C CNN
@@ -2849,8 +2849,8 @@ L Connector:TestPoint TP?
 U 1 1 5E901354
 P 10550 2050
 AR Path="/5E901354" Ref="TP?"  Part="1" 
-AR Path="/5E0A3961/5E901354" Ref="TP3"  Part="1" 
-F 0 "TP3" V 10550 2225 50  0000 L CNN
+AR Path="/5E0A3961/5E901354" Ref="T7"  Part="1" 
+F 0 "T7" V 10550 2225 50  0000 L CNN
 F 1 "TestPoint" H 10608 2079 50  0001 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 10750 2050 50  0001 C CNN
 F 3 "~" H 10750 2050 50  0001 C CNN
