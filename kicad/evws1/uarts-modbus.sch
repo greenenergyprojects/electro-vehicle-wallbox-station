@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Electro Vehicle Wallbox Station 1"
+Date "2020-02-23"
+Rev "V1.0"
+Comp "(C) Manfred Steiner"
+Comment1 "https://github.com/greenenergyprojects/electro-vehicle-wallbox-station/evws1"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -213,8 +213,8 @@ L Connector:TestPoint TP?
 U 1 1 5E2A603E
 P 3100 1150
 AR Path="/5E0A3961/5E2A603E" Ref="TP?"  Part="1" 
-AR Path="/5E0A3961/5E20BE9A/5E2A603E" Ref="TP5"  Part="1" 
-F 0 "TP5" H 3050 1350 50  0000 L CNN
+AR Path="/5E0A3961/5E20BE9A/5E2A603E" Ref="T8"  Part="1" 
+F 0 "T8" H 3050 1350 50  0000 L CNN
 F 1 "TestPoint" H 3158 1179 50  0001 L CNN
 F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3300 1150 50  0001 C CNN
 F 3 "~" H 3300 1150 50  0001 C CNN
@@ -531,8 +531,8 @@ L Connector:TestPoint TP?
 U 1 1 5E2AEE03
 P 3350 4975
 AR Path="/5E0A3961/5E2AEE03" Ref="TP?"  Part="1" 
-AR Path="/5E0A3961/5E20BE9A/5E2AEE03" Ref="TP6"  Part="1" 
-F 0 "TP6" H 3300 5175 50  0000 L CNN
+AR Path="/5E0A3961/5E20BE9A/5E2AEE03" Ref="T9"  Part="1" 
+F 0 "T9" H 3300 5175 50  0000 L CNN
 F 1 "TestPoint" H 3408 5004 50  0001 L CNN
 F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3550 4975 50  0001 C CNN
 F 3 "~" H 3550 4975 50  0001 C CNN
@@ -950,13 +950,13 @@ Wire Wire Line
 Wire Wire Line
 	8200 1900 8200 2000
 Wire Wire Line
-	8300 1400 7800 1400
-Wire Wire Line
-	8300 1300 7800 1300
+	8300 1500 7800 1500
 Wire Wire Line
 	8300 1600 7800 1600
 Wire Wire Line
-	8300 1500 7800 1500
+	8300 1400 7800 1400
+Wire Wire Line
+	8300 1300 7800 1300
 Wire Wire Line
 	8300 1800 7800 1800
 Wire Wire Line
@@ -965,17 +965,17 @@ Text Label 6600 4100 0    50   ~ 0
 ~RE1
 Text Label 6600 4200 0    50   ~ 0
 DE1
-Text Label 7900 1400 0    50   ~ 0
+Text Label 7900 1500 0    50   ~ 0
 DE1
-Text Label 7900 1300 0    50   ~ 0
+Text Label 7900 1600 0    50   ~ 0
 ~RE1
 Text Label 7900 1800 0    50   ~ 0
 UC-TXD0
 Text Label 7900 1700 0    50   ~ 0
 UC-RXD0
-Text Label 7900 1500 0    50   ~ 0
+Text Label 7900 1300 0    50   ~ 0
 UC-RXD1
-Text Label 7900 1600 0    50   ~ 0
+Text Label 7900 1400 0    50   ~ 0
 UC-TXD1
 $Comp
 L _project:SM712 D16
@@ -1189,8 +1189,8 @@ L Connector:TestPoint TP?
 U 1 1 601D002C
 P 3650 2700
 AR Path="/5E0A3961/601D002C" Ref="TP?"  Part="1" 
-AR Path="/5E0A3961/5E20BE9A/601D002C" Ref="TP8"  Part="1" 
-F 0 "TP8" H 3600 2900 50  0000 L CNN
+AR Path="/5E0A3961/5E20BE9A/601D002C" Ref="T10"  Part="1" 
+F 0 "T10" H 3600 2900 50  0000 L CNN
 F 1 "TestPoint" H 3708 2729 50  0001 L CNN
 F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 3850 2700 50  0001 C CNN
 F 3 "~" H 3850 2700 50  0001 C CNN
@@ -1202,8 +1202,8 @@ L Connector:TestPoint TP?
 U 1 1 601D0033
 P 3900 6550
 AR Path="/5E0A3961/601D0033" Ref="TP?"  Part="1" 
-AR Path="/5E0A3961/5E20BE9A/601D0033" Ref="TP9"  Part="1" 
-F 0 "TP9" H 3850 6750 50  0000 L CNN
+AR Path="/5E0A3961/5E20BE9A/601D0033" Ref="T11"  Part="1" 
+F 0 "T11" H 3850 6750 50  0000 L CNN
 F 1 "TestPoint" H 3958 6579 50  0001 L CNN
 F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 4100 6550 50  0001 C CNN
 F 3 "~" H 4100 6550 50  0001 C CNN

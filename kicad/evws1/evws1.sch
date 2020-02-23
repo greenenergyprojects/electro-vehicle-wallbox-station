@@ -6,10 +6,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "Electro Vehicle Wallbox Station"
-Date "2019-12-09"
-Rev "0.1"
+Date "2020-02-23"
+Rev "V1.0"
 Comp "(C) Manfred Steiner"
-Comment1 "Branch master"
+Comment1 "https://github.com/greenenergyprojects/electro-vehicle-wallbox-station/evws1"
 Comment2 "kicad/evws1"
 Comment3 "https://github.com/greenenergyprojects/electro-vehicle-wallbox-station"
 Comment4 ""
@@ -715,7 +715,7 @@ F2 "V2P" I L 5275 2800 50
 F3 "V2N" I L 5275 3200 50 
 F4 "V1P" I R 6075 2800 50 
 F5 "V1N" I R 6075 3200 50 
-F6 "I1" I R 6075 3850 50 
+F6 "I1" I R 6075 3750 50 
 F7 "I2" I L 5275 3850 50 
 F8 "AD-V1" O R 6075 4000 50 
 F9 "AD-I1" O R 6075 4100 50 
@@ -725,16 +725,17 @@ F12 "VREF-2V5" I L 5275 4300 50
 F13 "VREF+2V5" I L 5275 4200 50 
 F14 "AOUT" I R 6075 4300 50 
 F15 "E1" O R 6075 4200 50 
+F16 "P1" O R 6075 3900 50 
 $EndSheet
 Wire Wire Line
-	7150 3850 6075 3850
+	7150 3850 6400 3850
 Wire Wire Line
 	4300 3850 5275 3850
 $Comp
-L Device:LED D3
+L Device:LED LED3
 U 1 1 5E43026F
 P 9025 5150
-F 0 "D3" H 9025 5050 50  0000 C CNN
+F 0 "LED3" H 9025 5050 50  0000 C CNN
 F 1 "LED" H 9017 4986 50  0001 C CNN
 F 2 "LEDs:LED_0805_HandSoldering" H 9025 5150 50  0001 C CNN
 F 3 "~" H 9025 5150 50  0001 C CNN
@@ -810,10 +811,10 @@ F 3 "~" H 2675 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D4
+L Device:LED LED2
 U 1 1 5E57B472
 P 2325 5200
-F 0 "D4" H 2325 5100 50  0000 C CNN
+F 0 "LED2" H 2325 5100 50  0000 C CNN
 F 1 "LED" H 2317 5036 50  0001 C CNN
 F 2 "LEDs:LED_0805_HandSoldering" H 2325 5200 50  0001 C CNN
 F 3 "~" H 2325 5200 50  0001 C CNN
@@ -867,8 +868,8 @@ Wire Wire Line
 Text Label 9625 3600 0    50   ~ 0
 CP1
 Wire Wire Line
-	6150 5250 6750 5250
-Text Label 6750 5250 2    50   ~ 0
+	6150 5250 6800 5250
+Text Label 6800 5250 2    50   ~ 0
 CP1
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -1053,17 +1054,9 @@ F 3 "~" H 7025 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6075 4100 6400 4100
+	6325 4950 6150 4950
 Wire Wire Line
-	6400 4100 6400 4950
-Wire Wire Line
-	6400 4950 6150 4950
-Wire Wire Line
-	6075 4000 6450 4000
-Wire Wire Line
-	6450 4000 6450 5050
-Wire Wire Line
-	6450 5050 6150 5050
+	6375 5050 6150 5050
 Wire Wire Line
 	5275 4100 4950 4100
 Wire Wire Line
@@ -1322,7 +1315,7 @@ F17 "VREF+2V5" O L 5150 4800 50
 F18 "VREF-2V5" O L 5150 4700 50 
 F19 "EV1X" I L 5150 6700 50 
 F20 "EV2X" I L 5150 6800 50 
-F21 "AOUT" O R 6150 4725 50 
+F21 "AOUT" O R 6150 4700 50 
 F22 "VE1" I R 6150 4800 50 
 $EndSheet
 Wire Wire Line
@@ -1400,11 +1393,11 @@ F 3 "" H 8025 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7375 4750 7100 4750
+	7375 4750 7175 4750
 Connection ~ 7375 4750
 Wire Wire Line
 	7375 4750 7375 4900
-Text Label 7150 4750 0    50   ~ 0
+Text Label 7200 4750 0    50   ~ 0
 ~EV1
 $Comp
 L power:GND #PWR0117
@@ -1967,17 +1960,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 3200 6075 3200
 $Comp
-L Connector_Generic:Conn_01x04 T2
-U 1 1 5E422024
-P 6950 5250
-F 0 "T2" H 6950 4950 50  0000 C CNN
-F 1 "header" H 6925 5450 50  0000 C CNN
-F 2 "Project:idc-header-1x04-p2.54mm-vertical" H 6950 5250 50  0001 C CNN
-F 3 "~" H 6950 5250 50  0001 C CNN
-	1    6950 5250
-	1    0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0258
 U 1 1 5E43948B
 P 6675 5400
@@ -1989,10 +1971,10 @@ F 3 "" H 6675 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 5350 6675 5350
+	6800 5350 6675 5350
 Wire Wire Line
 	6675 5350 6675 5400
-Connection ~ 6400 4950
+Connection ~ 6325 4950
 $Comp
 L Connector_Generic:Conn_01x04 T4
 U 1 1 5E4E08A3
@@ -2028,27 +2010,27 @@ Wire Wire Line
 	4625 5150 4950 5150
 Connection ~ 4950 4950
 Wire Wire Line
-	6400 5150 6750 5150
+	6325 5150 6800 5150
 Wire Wire Line
-	6400 4950 6400 5150
+	6325 4950 6325 5150
 Wire Wire Line
-	6750 5050 6450 5050
-Connection ~ 6450 5050
+	6800 5050 6375 5050
+Connection ~ 6375 5050
 Text Label 4625 5150 0    50   ~ 0
 AD-I2
 Text Label 4625 5050 0    50   ~ 0
 AD-V2
-Text Label 6750 5150 2    50   ~ 0
+Text Label 6800 5150 2    50   ~ 0
 AD-I1
-Text Label 6750 5050 2    50   ~ 0
+Text Label 6800 5050 2    50   ~ 0
 AD-V1
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5ED2AD37
 P 2200 6150
 AR Path="/5E0A3961/5E20BE9A/5ED2AD37" Ref="J?"  Part="1" 
-AR Path="/5ED2AD37" Ref="J27"  Part="1" 
-F 0 "J27" V 2200 6225 50  0000 L CNN
+AR Path="/5ED2AD37" Ref="J16"  Part="1" 
+F 0 "J16" V 2200 6225 50  0000 L CNN
 F 1 "header" V 2300 5975 50  0000 L CNN
 F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 2200 6150 50  0001 C CNN
 F 3 "~" H 2200 6150 50  0001 C CNN
@@ -2060,8 +2042,8 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 5ED434D8
 P 2600 6150
 AR Path="/5E0A3961/5E20BE9A/5ED434D8" Ref="J?"  Part="1" 
-AR Path="/5ED434D8" Ref="J28"  Part="1" 
-F 0 "J28" V 2600 5850 50  0000 L CNN
+AR Path="/5ED434D8" Ref="J17"  Part="1" 
+F 0 "J17" V 2600 5850 50  0000 L CNN
 F 1 "header" V 2700 5975 50  0000 L CNN
 F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 2600 6150 50  0001 C CNN
 F 3 "~" H 2600 6150 50  0001 C CNN
@@ -2105,9 +2087,9 @@ Connection ~ 2300 6700
 Wire Wire Line
 	2300 6700 1825 6700
 Wire Wire Line
-	6150 4725 6225 4725
+	6150 4700 6225 4700
 Wire Wire Line
-	6225 4725 6225 4300
+	6225 4700 6225 4300
 Wire Wire Line
 	6225 4300 6075 4300
 Wire Wire Line
@@ -2153,8 +2135,8 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 5E536ADA
 P 4450 1850
 AR Path="/5E0A3961/5E536ADA" Ref="J?"  Part="1" 
-AR Path="/5E536ADA" Ref="J29"  Part="1" 
-F 0 "J29" H 4475 1650 50  0000 C CNN
+AR Path="/5E536ADA" Ref="J18"  Part="1" 
+F 0 "J18" H 4475 1650 50  0000 C CNN
 F 1 "header" H 4425 1950 50  0000 C CNN
 F 2 "Project:idc-header-1x02-p2.54mm-vertical" H 4450 1850 50  0001 C CNN
 F 3 "~" H 4450 1850 50  0001 C CNN
@@ -2171,4 +2153,44 @@ Wire Wire Line
 Wire Wire Line
 	4750 1850 4650 1850
 Connection ~ 5200 1950
+Wire Wire Line
+	6400 3850 6400 3750
+Wire Wire Line
+	6400 3750 6075 3750
+Wire Wire Line
+	6375 4000 6375 5050
+Wire Wire Line
+	6325 4100 6325 4950
+$Comp
+L Connector_Generic:Conn_01x06 T2
+U 1 1 5E91D597
+P 7000 5150
+F 0 "T2" H 7000 4750 50  0000 C CNN
+F 1 "header" H 7000 5475 50  0000 C CNN
+F 2 "Project:idc-header-1x06-p2.54mm-vertical" H 7000 5150 50  0001 C CNN
+F 3 "~" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6275 4800 6425 4800
+Wire Wire Line
+	6425 4800 6425 4950
+Connection ~ 6275 4800
+Text Label 6800 4950 2    50   ~ 0
+AD-E1
+Text Label 6800 4850 2    50   ~ 0
+AD-P1
+Wire Wire Line
+	6425 4950 6800 4950
+Wire Wire Line
+	6325 4100 6075 4100
+Wire Wire Line
+	6375 4000 6075 4000
+Wire Wire Line
+	6075 3900 6475 3900
+Wire Wire Line
+	6475 3900 6475 4850
+Wire Wire Line
+	6475 4850 6800 4850
 $EndSCHEMATC
