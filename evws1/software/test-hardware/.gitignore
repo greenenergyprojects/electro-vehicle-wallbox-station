@@ -1,0 +1,12 @@
+# Netbeans C/C++
+**/nbproject/private/
+**/build/
+**/dist/
+**/.dep.inc
+
+# Codeblocks/Structorizer
+**/bin/
+**/obj/
+*.depend
+*.layout
+
