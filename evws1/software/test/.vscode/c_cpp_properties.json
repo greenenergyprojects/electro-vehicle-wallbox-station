@@ -8,7 +8,7 @@
                 "/usr/lib/gcc/avr/**",
                 "${workspaceFolder}/src/**"
             ],
-            "defines": [ "__AVR_ATmega324P__" ],
+            "defines": [ "__AVR_ATmega328P__" ],
             "forcedInclude": [
                 "/usr/lib/avr/include/stdio.h"
             ],

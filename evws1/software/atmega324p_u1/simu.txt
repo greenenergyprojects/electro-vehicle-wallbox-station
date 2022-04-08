@@ -1,0 +1,79 @@
+==>  $qSupported:multiprocess+;swbreak+;hwbreak+;qRelocInsn+;fork-events+;vfork-events+;exec-events+;vContSupported+;QThreadEvents+;no-resumed+#df
+qSupported ... Tell the remote stub about features supported by GDB, and query the stub for features it supports
+<--    +
+<--    $PacketSize=800;qXfer:features:read+#a3
+==>  +
+==>  $vMustReplyEmpty#3a
+vMustReplyEmpty ... The correct reply to an unknown ‘v’ packet is to return the empty string, however, some older versions of gdbserver would incorrectly return ‘OK’ for unknown ‘v’ packets. The ‘vMustReplyEmpty’ is used as a feature test to check how gdbserver handles unknown packets, it is important that this packet be handled in the same way as other unknown ‘v’ packets.
+<--    +
+<--    $#00
+==>  +
+==>  $Hg0#df
+<--    +
+<--    $OK#9a
+==>  +
+==>  $qXfer:features:read:target.xml:0,7fb#4a
+<--    +
+<--    $l<?xml version="1.0"?>\n<!DOCTYPE target SYSTEM "gdb-target.dtd"><target version="1.0">\n <architecture>avr</architecture>\n</target>\n#84
+==>  +
+==>  $qTStatus#49
+qTStatus ... Ask the stub if there is a trace experiment running right now.
+<--    +
+<--    $#00
+==>  +
+==>  $?#3f
+? ... query the reason the target halted
+<--    +
+<--    $S05#b8
+S05 ... SIGTRAP 5 Core Trace/breakpoint trap (man 7 signal)
+==>  +
+==>  $qfThreadInfo#bb
+qfThreadInfo ... Obtain a list of all active thread IDs, start of query
+<--    +
+<--    $m1#9e
+==>  +
+==>  $qsThreadInfo#c8
+qsThreadInfo ... Obtain a list of all active thread IDs, continue .. end with l
+<--    +
+<--    $l#6c
+==>  +
+==>  $qAttached#8f
+<--    +
+<--    $#00
+==>  +
+==>  $Hc-1#09
+<--    +
+<--    $#00
+==>  +
+==>  $qC#b4
+<--    +
+<--    $QC01#f5
+==>  +
+==>  $qOffsets#4b
+<--    +
+<--    $#00
+==>  +
+==>  $g#67
+<--    +
+<--    $aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa00ff0800000000#54
+==>  +
+==>  $qfThreadInfo#bb
+<--    +
+<--    $m1#9e
+==>  +
+==>  $qsThreadInfo#c8
+<--    +
+<--    $l#6c
+==>  +
+==>  $qSymbol::#5b
+<--    +
+<--    $#00
+==>  +
+
+
+
+
+
+
+
+

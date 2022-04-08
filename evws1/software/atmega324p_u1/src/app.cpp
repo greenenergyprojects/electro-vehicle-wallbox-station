@@ -14,8 +14,8 @@ struct App app;
 	// init() is called one time at startup
 	// ----------------------------------------------------------
 	void init () {
-		fprintf(uart0out, "Hello world to UART0\n\r");
-		fprintf(uart1out, "Hello world to UART1\n\r");
+		// fprintf(uart0out, "Hello world to UART0\n\r");
+		// fprintf(uart1out, "Hello world to UART1\n\r");
 	}
 
 
@@ -32,6 +32,14 @@ struct App app;
 	// Interrupts are enabled!
 	// ------------------------------------------------------------
 	void task1ms () {
+		static uint16_t timer = 0;
+		timer++;
+		if (timer > 3000) {
+			timer = 0;
+			sys::setLifeLed(0);
+		} else if (timer > 2900) {
+			sys::setLifeLed(1);
+		}
 	}
 
 	void task2ms () {
@@ -53,6 +61,7 @@ struct App app;
 	}
 
 	void task128ms () {
+
 	}
 
 }

@@ -13,8 +13,13 @@
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
 
+// #include "/work/sx/simavr/simavr/sim/avr/avr_mcu_section.h"
+// AVR_MCU(F_CPU, "atmega324p");
+// AVR_MCU_VOLTAGES(5000, 5000, 2500);
+
 #include "sys.hpp"
 #include "mon.hpp"
+#include "gdb.hpp"
 #include "app.hpp"
 
 // defines
@@ -37,13 +42,16 @@ const char *WELCOME [] = {
 };
 
 
-int main () {
+int __attribute__((optimize("O0"))) main () {
 	sys::init();
 	app::init();
 	for (uint8_t i = 0; i < sizeof(WELCOME) / sizeof(WELCOME[0]); i++) {
+		if (i > 0) {
+			putchar(' ');
+		}
 		sys::printStringFromFlash(WELCOME[i]);
-		printf(" ");
 	}
+	gdb::init();
 	mon::init();
 
 	// enable interrupt system
@@ -51,6 +59,7 @@ int main () {
 
 	while (1) {
 		sys::main();
+		gdb::main();
 		mon::main();
 		app::main();
 	}

@@ -41,10 +41,10 @@ namespace mon {
 	// init() is called one time at startup
 	// ----------------------------------------------------------
 	void init () {
-	#ifdef GLOBAL_MONITOR
-	memset((void *)&mon, 0, sizeof(mon));
-	printf(mon::LINESTART);
-	#endif
+		#ifdef GLOBAL_MONITOR
+		memset((void *)&mon, 0, sizeof(mon));
+		printf(mon::LINESTART);
+		#endif
 	}
 
 	// ----------------------------------------------------------

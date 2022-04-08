@@ -27,20 +27,33 @@ namespace sys {
 
 	typedef uint8_t Event;
 
-	struct Uart {
-		uint8_t rpos_u8;
+	struct UartX {
 		uint8_t wpos_u8;
+		uint8_t rpos_u8;
 		uint8_t errcnt_u8;
-		uint8_t rbuffer_u8[GLOBAL_UART_RECBUFSIZE];
+		uint8_t rbuffer_u8[255];
 	};
 
+	struct Uart0 {
+		uint8_t wpos_u8;
+		uint8_t rpos_u8;
+		uint8_t errcnt_u8;
+		uint8_t rbuffer_u8[GLOBAL_UART0_RECBUFSIZE];
+	};
+
+	struct Uart1 {
+		uint8_t wpos_u8;
+		uint8_t rpos_u8;
+		uint8_t errcnt_u8;
+		uint8_t rbuffer_u8[GLOBAL_UART1_RECBUFSIZE];
+	};
 
 	struct Sys {
 		uint8_t flags_u8;
 		uint8_t taskErr_u8;
 		Event eventFlag;
-		struct Uart uart0;
-		struct Uart uart1;
+		struct Uart0 uart0;
+		struct Uart1 uart1;
 	};
 
 	extern struct Sys sys;
@@ -68,6 +81,15 @@ namespace sys {
 	int16_t getUart1BufferByte (uint8_t pos);
 	void flushUart0 ();
 	void flushUart1 ();
+
+	// project specific declarations
+
+	void toggleLifeLed ();
+	void setLifeLed (bool on);
+	int8_t hexValueFromChar (char c);
+	int16_t hex2uint8 (char s[]);
+
+
 }
 
 #endif /* SYS_HPP */

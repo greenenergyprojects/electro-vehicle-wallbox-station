@@ -13,6 +13,7 @@
 #include <util/delay.h>
 
 #include "sys.hpp"
+#include "gdb.hpp"
 #include "mon.hpp"
 #include "app.hpp"
 
@@ -97,6 +98,8 @@ namespace sys {
 	void init () {
 		memset((void *)&sys, 0, sizeof(sys));
 
+		DDRB |= (1 << PB0); // ~K1-ON via SW6D or Life-LED via JP9
+
 		UBRR0L = (F_CPU / GLOBAL_UART0_BITRATE + 4) / 8 - 1;
 		UBRR0H = 0x00;
 		UCSR0A = (1 << U2X0);
@@ -122,14 +125,14 @@ namespace sys {
 		fdev_setup_stream(&sys_uart0_in, NULL, uart0_getch, _FDEV_SETUP_READ);
 		fdev_setup_stream(&sys_uart1_in, NULL, uart1_getch, _FDEV_SETUP_READ);
 
-		stdout   = &sys_uart0_out;
-		stdin    = &sys_uart0_in;
+		stdout   = &sys_uart1_out;
+		stdin    = &sys_uart1_in;
 		stderr   = &sys_uart1_out;
 		uart0out = &sys_uart0_out;
 		uart0in  = &sys_uart0_in;
 		uart1out = &sys_uart1_out;
 		uart1in  = &sys_uart1_in;
-		_delay_ms(150);
+		// _delay_ms(1);
 	}
 
 
@@ -162,14 +165,14 @@ namespace sys {
 
 	// -------------------------------------------------------
 
-	int getCharFromUart (struct Uart *pUart) {
+	int getCharFromUart (struct UartX *pUart, uint8_t bSize) {
 		cli();
 		if (pUart->wpos_u8 == pUart->rpos_u8) {
 			sei();
-		return _FDEV_EOF;
+			return _FDEV_EOF;
 		}
 		uint8_t c = pUart->rbuffer_u8[pUart->rpos_u8++];
-		if (pUart->rpos_u8 >= GLOBAL_UART_RECBUFSIZE) {
+		if (pUart->rpos_u8 >= bSize) {
 		   pUart->rpos_u8 = 0;
 		}
 		sei();
@@ -181,14 +184,14 @@ namespace sys {
 		if (f != uart0in) {
 			return _FDEV_EOF;
 		}
-		return getCharFromUart(&sys.uart0);
+		return getCharFromUart((struct UartX *)&sys.uart0, GLOBAL_UART0_RECBUFSIZE);
 	}
 
 	int uart1_getch (FILE *f) {
 		if (f != uart1in) {
 			return _FDEV_EOF;
 		}
-		return getCharFromUart(&sys.uart1);
+		return getCharFromUart((struct UartX *)&sys.uart1, GLOBAL_UART1_RECBUFSIZE);
 	}
 
 	int uart0_putch (char c, FILE *f) {
@@ -214,30 +217,30 @@ namespace sys {
 	}
 
 
-	uint8_t getAvailableUartBytes (struct Uart *pUart) {
+	uint8_t getAvailableUartBytes (struct UartX *pUart, uint8_t bSize) {
 		return pUart->wpos_u8 >= pUart->rpos_u8
 			   ? pUart->wpos_u8 - pUart->rpos_u8
-			   : ((int16_t)pUart->wpos_u8) + GLOBAL_UART_RECBUFSIZE - pUart->rpos_u8;
+			   : ((int16_t)pUart->wpos_u8) + bSize - pUart->rpos_u8;
 	}
 
 	uint8_t getAvailableUart0Bytes () {
-		return getAvailableUartBytes(&sys.uart0);
+		return getAvailableUartBytes((struct UartX*)&sys.uart0, GLOBAL_UART0_RECBUFSIZE);
 	}
 
 	uint8_t getAvailableUart1Bytes () {
-		return getAvailableUartBytes(&sys.uart1);
+		return getAvailableUartBytes((struct UartX*)&sys.uart1, GLOBAL_UART1_RECBUFSIZE);
 	}
 
 
-	int16_t getUartBufferByte (struct Uart *pUart, uint8_t pos) {
+	int16_t getUartBufferByte (struct UartX *pUart, uint8_t pos, uint8_t bSize) {
 		int16_t rv;
 		cli();
-		if (pos >= getAvailableUartBytes(pUart)) {
+		if (pos >= getAvailableUartBytes(pUart, bSize)) {
 			rv = -1;
 		} else {
 			uint8_t bufpos = pUart->rpos_u8 + pos;
-			if (bufpos >= GLOBAL_UART_RECBUFSIZE) {
-				bufpos -= GLOBAL_UART_RECBUFSIZE;
+			if (bufpos >= bSize) {
+				bufpos -= bSize;
 			}
 			rv = pUart->rbuffer_u8[bufpos];
 		}
@@ -246,16 +249,16 @@ namespace sys {
 	}
 
 	int16_t getUart0BufferByte (uint8_t pos) {
-		return getUartBufferByte(&sys.uart0, pos);
+		return getUartBufferByte((struct UartX *)&sys.uart0, pos, GLOBAL_UART0_RECBUFSIZE);
 	}
 
 	int16_t getUart1BufferByte (uint8_t pos) {
-		return getUartBufferByte(&sys.uart1, pos);
+		return getUartBufferByte((struct UartX *)&sys.uart1, pos, GLOBAL_UART1_RECBUFSIZE);
 	}
 
-	void flushUart (struct Uart *pUart) {
+	void flushUart (struct UartX *pUart) {
 		cli();
-		if (pUart == &sys.uart0) {
+		if (pUart == (struct UartX*)&sys.uart0) {
 			if (UCSR0A & (1 << RXC0)) {
 				volatile __attribute__((unused)) uint8_t c = UDR0;
 			}
@@ -271,21 +274,21 @@ namespace sys {
 	}
 
 	void flushUart0 () {
-		flushUart(&sys.uart0);
+		flushUart((struct UartX*)&sys.uart0);
 	}
 
 	void flushUart1 () {
-		flushUart(&sys.uart1);
+		flushUart((struct UartX*)&sys.uart1);
 	}
 
-	void handleUartReceiveInterrupt (struct Uart *pUart, char c) {
+	void handleUartReceiveInterrupt (struct UartX *pUart, char c, uint8_t bSize) {
 		pUart->rbuffer_u8[pUart->wpos_u8++] = c;
-		if (pUart->wpos_u8 >= GLOBAL_UART_RECBUFSIZE) {
+		if (pUart->wpos_u8 >= bSize) {
 			pUart->wpos_u8 = 0;
 		}
 		if (pUart->wpos_u8 == pUart->rpos_u8) {
 			pUart->wpos_u8 == 0
-				? pUart->wpos_u8 = GLOBAL_UART_RECBUFSIZE - 1
+				? pUart->wpos_u8 = bSize - 1
 				: pUart->wpos_u8--;
 			if (pUart->errcnt_u8 < 0xff) {
 				pUart->errcnt_u8++;
@@ -342,7 +345,7 @@ namespace sys {
 	}
 
 
-	void printStringFromFlash (PGM_P str) {
+	void __attribute__((optimize("O0"))) printStringFromFlash (PGM_P str) {
 		char c;
 
 		while (1) {
@@ -786,6 +789,44 @@ namespace sys {
 	#endif // GLOBAL_MONCMD_HEXDUMP
 
 	#endif // GLOBAL_MONITOR
+
+	void toggleLifeLed () {
+		PORTB ^= (1 << PB0);
+	}
+
+	void setLifeLed (bool on) {
+		if (on) {
+			PORTB |= (1 << PB0);
+		} else {
+			PORTB &= ~(1 << PB0);
+		}
+	}
+
+	int8_t hexValueFromChar (char c) {
+		if (c >= '0' && c <= '9') {
+			return c - '0';
+		} else if (c >= 'a' && c <= 'f') {
+			return c - 'a' + 10;
+		}  else if (c >= 'A' && c <= 'F') {
+			return c - 'A' + 10;
+		} else {
+			return -1;
+		}
+	}
+
+	int16_t hex2uint8 (char s[]) {
+		uint8_t rv = 0;
+		for (uint8_t i = 0; i < 2; i++) {
+			int8_t x = hexValueFromChar(s[i]);
+			if (x < 0) {
+				return -1;
+			}
+			rv = (rv << 4) | x;
+		}
+		return rv;
+	}
+
+
 }
 
 // ------------------------------------
@@ -793,16 +834,21 @@ namespace sys {
 // ------------------------------------
 
 ISR (USART0_RX_vect) {
-	static uint8_t lastChar;
-	uint8_t c = UDR0;
+	#ifdef GLOBAL_GDB
+		char c = UDR0;
+		gdb::handleUartIsrByte(c);
+	#else
+		static uint8_t lastChar;
+		uint8_t c = UDR0;
 
-	if (c == 'R' && lastChar == '@') {
-		wdt_enable(WDTO_15MS);
-		wdt_reset();
-		while(1) {};
-	}
-	lastChar = c;
-	sys::handleUartReceiveInterrupt(&(sys::sys.uart0), c);
+		if (c == 'R' && lastChar == '@') {
+			wdt_enable(WDTO_15MS);
+			wdt_reset();
+			while(1) {};
+		}
+		lastChar = c;
+		sys::handleUartReceiveInterrupt((struct sys::UartX*)&(sys::sys.uart0), c, GLOBAL_UART0_RECBUFSIZE);
+	#endif
 }
 
 
@@ -816,7 +862,7 @@ ISR (USART1_RX_vect) {
 		while(1) {};
 	}
 	lastChar = c;
-	sys::handleUartReceiveInterrupt(&(sys::sys.uart1), c);
+	sys::handleUartReceiveInterrupt((struct sys::UartX*)&(sys::sys.uart1), c, GLOBAL_UART1_RECBUFSIZE);
 }
 
 // Timer 0 Output/Compare Interrupt
